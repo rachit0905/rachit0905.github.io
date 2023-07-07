@@ -13,6 +13,33 @@
 
     <style>
     
+    .skillss {
+  max-width: 68.75rem;
+  margin: auto;
+  text-align: center;
+  margin-top: 2.5rem;
+  
+}
+
+.skillss-header {
+  margin-bottom: 3rem;
+}
+
+.skillss-wrapper img {
+  padding: 1.25rem;
+}
+
+.icon {
+  width: 11.875rem;
+  height: 11.25rem;
+  margin-right: 1rem;
+}
+
+
+
+
+
+
 
 .navbarScroll.navbarDark {
     background-color: black;
@@ -25,6 +52,7 @@
 .container {
   width: 90%; /* Full width */
   background-color: rgb(247, 245, 245); /* Grey background */
+  
 }
         /* hero background image */
 .bgimage {
@@ -32,7 +60,6 @@
     background: url('img/profilepic.jpeg');
     background-size:cover;
     position:relative;
-    max-width:100%;height:auto;
 }
 /* text css above hero image*/
 .hero_title {
@@ -430,14 +457,22 @@
                           </ul>
                       </div>
                   </div>
-                  <div style="text-align: justify;" class="row mt-3">
-                    <p>
-                      <ul>
-                      <li>During my Bachelor of Technology in Computer Science and Engineering at Guru Gobind Singh Indraprastha University, I honed my programming skills and gained practical experience in various domains of computer science. With a notable CGPA of 8.89, I demonstrated my dedication and commitment to academic excellence.</li>
-                      
-                      <li>As a Data Science and Python Developer Intern at Sarvvid AI, New Delhi, I had the opportunity to work on challenging projects that allowed me to apply my skills in a practical setting. I contributed to the development of a decentralized data storage solution, leveraging Python to ensure efficient data management within the organization. Additionally, I actively participated in a project that focused on improving data compression rates using machine learning and data science techniques.</li>
-                      
-                    </div>
+                  
+                    <div style="text-align: justify;" class="container mt-5">
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <h3>ACADEMIC</h3>
+                            <p>During my Bachelor of Technology in Computer Science and Engineering at Guru Gobind Singh Indraprastha University, I honed my programming skills and gained practical experience in various domains of computer science. With a notable CGPA of 8.89, I demonstrated my dedication and commitment to academic excellence.</p>
+                          </div>
+                          <div class="col-sm-6">
+                            <h3>INTERNSHIP</h3>
+                            <p>As a Data Science and Python Developer Intern at Sarvvid AI, New Delhi, I had the opportunity to work on challenging projects that allowed me to apply my skills in a practical setting. I contributed to the development of a decentralized data storage solution, leveraging Python to ensure efficient data management within the organization.</p>
+                          </div>
+                          
+                        </div>
+                      </div>
+
+
               </div>
           </div>
   </section>
@@ -543,6 +578,7 @@
                     <li>- Proficient in programming languages: C++, Python</li>
                     <li>- Familiarity with web development technologies: HTML, CSS, JavaScript</li>
                     <li>- Experience with version control systems : Git</li>
+                    <li>- DBMS - MONGODB and MYSQL</li>
                     <li>- Understanding of data structures and algorithms</li>
                   </ul></p>
                 </div>
@@ -553,9 +589,9 @@
                 <div class="card-body p-4">
                   <h3>NON TECHNICAL</h3>
                   <p class="mb-0"><ul>
-                    <li>-Knowledge of software development methodologies and practices</li>
-                    <li>-Communication Skills</li>
-                    <li>-Team Player</li>
+                    <li>- Knowledge of software development methodologies and practices</li>
+                    <li>- Communication Skills</li>
+                    <li>- Team Player</li>
                 </ul></p>
                 </div>
               </div>
@@ -565,11 +601,11 @@
                     <div class="card-body p-4">
                     <h3>COMPETENCIES & AREA OF INTEREST</h3>
                     <p class="mb-0"><ul>
-                        <li>-Software Development.</li>
-                        <li>-Blockchain</li>
-                        <li>-Machine Learning</li>
-                        <li>-C++/Python backend development</li>
-                        <li>-Data science and Machine Learning</li>
+                        <li>- Software Development.</li>
+                        <li>- Blockchain</li>
+                        <li>- Machine Learning</li>
+                        <li>- C++/Python backend development</li>
+                        <li>- Data science and Machine Learning</li>
                     </ul>
                     </p>
                     </div>
@@ -582,6 +618,50 @@
 
     <br>
     <br>
+
+    <section class="skillss" id="skillss">
+        <h2 class="skill-header">My Top Skills</h2>
+    
+        <div class="skills-wrapper">
+          <div class="first-set animate__animated animate__pulse">
+            <img
+              src="img/c++.png"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+              src="img/python.jpeg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+              src="img/html5.png"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+          
+            <img
+              src="img/js.png"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+              src="img/css.jpeg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card "
+            />
+            
+          </div>
+        </div>
+      </section>
+
+      <br>
+      <br>
 
     <div style="width: 80%;height:auto;"class="container">
     <p><b>Programming Languages</b></p>
@@ -617,17 +697,17 @@
 <br>
 <br>
 <section id="contact">
-    <div style="width: 40%;"class="container">
+    <div style=" max-width: 40.75rem;"class="container">
         <h1 class="text-center">Contact Me</h1>
 
         <div class="row mt-4">
             
 
-            <div class="col-lg-6">
+            <div class="col-lg-10">
                 <!-- form fields -->
                 <form>
-                    <input type="text" class="form-control form-control-lg" placeholder="Name">
-                    <input type="email" class="form-control mt-3" placeholder="Email">
+                    <input  type="text" class="form-control form-control-lg" placeholder="Name">
+                    <input type="email" class="form-control mt-3 mt" placeholder="Email">
                     <input type="text" class="form-control mt-3" placeholder="Subject">
                     <div class="mb-3 mt-3">
                         <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
@@ -637,6 +717,9 @@
                 
             </div>
 
+
+            <br>
+            <br>
         </div>
     </div>
 </section>
