@@ -1,0 +1,292 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Sorting Visualization</title>
+	<link rel="stylesheet" type="text/css" href="style/sorting.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
+
+</head>
+<body>
+	<div class="header1">
+		<h1>LET'S LEARN SORTING HEAP SORT</h1>
+	</div>
+    <div class="header">
+		<div class="vars">
+			<div class="range">
+				<div class="slide"><label for="bars">ِArray Size</label> : <input id="bars" type="range" name="bars"
+						min="1" max="100" value="50" oninput="setup()" onchange="setup()">
+					<span id="b"> </span></div>
+				<div class="slide"><label for="delay">Speed</label> : <input id="delay" type="range" name="delay"
+						min="0" max="1000" value="25" oninput="setup()" onchange="setup()">
+					<span id="d"></span></div>
+			</div>
+			<div class="sorts">
+                <a href="index.html">
+                    <input type="button"  value="Home">
+                </a>
+                <a href="selection.html">
+					<input type="button" onclick="SelectionSort()" value="Selection Sort">
+				</a>				
+                <a href="bubble.html">
+					<input type="button" onclick="BubbleSort()" value="Bubble Sort">
+				</a>				
+                <a href="insertion.html">
+					<input type="button" onclick="InsertionSort()" value="Insertion Sort">
+				</a>
+                <a href="merge.html">
+					<input type="button" onclick="MergeSort()" value="Merge Sort">
+				</a>
+                <a href="quick.html">
+					<input type="button" onclick="QuickSort()" value="Quick Sort">
+				</a>
+                <input type="button" onclick="HeapSort()" value="Heap Sort"><br><br>
+			</div>
+			
+			<button onclick="reset()">RESET TO NEW</button>
+		</div>
+	</div>
+    
+	<div id="container">
+	</div>
+	<br>
+	<br>
+	<div class="header1">
+		<h1>CODE SNIPPETS</h1>
+	</div>
+
+
+    <table>
+        <tr>
+          <th>C++ Code</th>
+          <th>Python Code</th>
+        </tr>
+        <tr>
+          <td> <div class="container">
+            <pre class="line-numbers">
+                <code class="language-css">
+                    
+// To heapify a subtree rooted with node i
+// which is an index in arr[].
+// n is size of heap
+void heapify(int arr[], int N, int i)
+{
+
+    // Initialize largest as root
+    int largest = i;
+
+    // left = 2*i + 1
+    int l = 2 * i + 1;
+
+    // right = 2*i + 2
+    int r = 2 * i + 2;
+
+    // If left child is larger than root
+    if (l < N && arr[l] > arr[largest])
+        largest = l;
+
+    // If right child is larger than largest
+    // so far
+    if (r < N && arr[r] > arr[largest])
+        largest = r;
+
+    // If largest is not root
+    if (largest != i) {
+        swap(arr[i], arr[largest]);
+
+        // Recursively heapify the affected
+        // sub-tree
+        heapify(arr, N, largest);
+    }
+}
+
+// Main function to do heap sort
+void heapSort(int arr[], int N)
+{
+
+    // Build heap (rearrange array)
+    for (int i = N / 2 - 1; i >= 0; i--)
+        heapify(arr, N, i);
+
+    // One by one extract an element
+    // from heap
+    for (int i = N - 1; i > 0; i--) {
+
+        // Move current root to end
+        swap(arr[0], arr[i]);
+
+        // call max heapify on the reduced heap
+        heapify(arr, i, 0);
+    }
+}
+
+// A utility function to print array of size n
+void printArray(int arr[], int N)
+{
+    for (int i = 0; i < N; ++i)
+        cout << arr[i] << " ";
+    cout << "\n";
+}
+
+// Driver's code
+int main()
+{
+    int arr[] = { 12, 11, 13, 5, 6, 7 };
+    int N = sizeof(arr) / sizeof(arr[0]);
+
+    // Function call
+    heapSort(arr, N);
+
+    cout << "Sorted array is \n";
+    printArray(arr, N);
+}
+                </code>
+             </pre>
+            </div></td>
+          <td> <div class="container">
+            <pre class="line-numbers">
+                <code class="language-css">
+# To heapify subtree rooted at index i.
+# n is size of heap
+
+
+def heapify(arr, N, i):
+    largest = i  # Initialize largest as root
+    l = 2 * i + 1     # left = 2*i + 1
+    r = 2 * i + 2     # right = 2*i + 2
+
+    # See if left child of root exists and is
+    # greater than root
+    if l < N and arr[largest] < arr[l]:
+        largest = l
+
+    # See if right child of root exists and is
+    # greater than root
+    if r < N and arr[largest] < arr[r]:
+        largest = r
+
+    # Change root, if needed
+    if largest != i:
+        arr[i], arr[largest] = arr[largest], arr[i]  # swap
+
+        # Heapify the root.
+        heapify(arr, N, largest)
+
+# The main function to sort an array of given size
+
+
+def heapSort(arr):
+    N = len(arr)
+
+    # Build a maxheap.
+    for i in range(N//2 - 1, -1, -1):
+        heapify(arr, N, i)
+
+    # One by one extract elements
+    for i in range(N-1, 0, -1):
+        arr[i], arr[0] = arr[0], arr[i]  # swap
+        heapify(arr, i, 0)
+
+
+# Driver's code
+if __name__ == '__main__':
+    arr = [12, 11, 13, 5, 6, 7]
+
+    # Function call
+    heapSort(arr)
+    N = len(arr)
+
+    print("Sorted array is")
+    for i in range(N):
+        print("%d" % arr[i], end=" ")
+                </code>
+             </pre>
+            </div></td>
+
+
+			<td> <div class="container">
+				<pre class="line-numbers">
+					<code class="language-css">
+// JavaScript program for implementation
+// of Heap Sort
+
+    function sort( arr)
+    {
+        var N = arr.length;
+
+        // Build heap (rearrange array)
+        for (var i = Math.floor(N / 2) - 1; i >= 0; i--)
+            heapify(arr, N, i);
+
+        // One by one extract an element from heap
+        for (var i = N - 1; i > 0; i--) {
+            // Move current root to end
+            var temp = arr[0];
+            arr[0] = arr[i];
+            arr[i] = temp;
+
+            // call max heapify on the reduced heap
+            heapify(arr, i, 0);
+        }
+    }
+
+    // To heapify a subtree rooted with node i which is
+    // an index in arr[]. n is size of heap
+    function heapify(arr, N, i)
+    {
+        var largest = i; // Initialize largest as root
+        var l = 2 * i + 1; // left = 2*i + 1
+        var r = 2 * i + 2; // right = 2*i + 2
+
+        // If left child is larger than root
+        if (l < N && arr[l] > arr[largest])
+            largest = l;
+
+        // If right child is larger than largest so far
+        if (r < N && arr[r] > arr[largest])
+            largest = r;
+
+        // If largest is not root
+        if (largest != i) {
+            var swap = arr[i];
+            arr[i] = arr[largest];
+            arr[largest] = swap;
+
+            // Recursively heapify the affected sub-tree
+            heapify(arr, N, largest);
+        }
+    }
+
+    /* A utility function to print array of size n */
+    function printArray(arr)
+    {
+        var N = arr.length;
+        for (var i = 0; i < N; ++i)
+            document.write(arr[i] + " ");
+        
+    }
+
+
+    var arr = [12, 11, 13, 5, 6, 7];
+    var N = arr.length;
+
+    sort(arr);
+
+    document.write( "Sorted array is");
+    printArray(arr, N);
+
+					</code>
+				 </pre>
+				</div></td>
+        </tr>
+        
+      </table>
+
+	<script src="App/beep.js"></script>
+	<script src="App/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+
+</html>

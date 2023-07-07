@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <style>
+    
+
+.navbarScroll.navbarDark {
+    background-color: black;
+}
+
+/* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.container {
+  width: 90%; /* Full width */
+  background-color: rgb(247, 245, 245); /* Grey background */
+}
+        /* hero background image */
+.bgimage {
+    height:100vh;
+    background: url('img/profilepic.jpeg');
+    background-size:cover;
+    position:relative;
+}
+/* text css above hero image*/
+.hero_title {
+    font-size: 4.5rem;
+}
+
+/* about section image css */
+.imageAboutPage {
+    width: 100%;
+}
+
+.hero_desc {
+    font-size: 2rem;
+}
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+
+.skills {
+  text-align: justify; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: white; /* White text color */
+}
+
+
+
+.Python {width: 90%; background-color: #04AA6D;} /* Green */
+.c\+\+ {width: 80%; background-color: #2196F3;} /* Blue */
+.js {width: 65%; background-color: #f44336;} /* Red */
+.htmlcss {width: 60%; background-color: #808080;} /* Dark Grey */
+
+
+
+/*for timeline*/
+/* The actual timeline (the vertical ruler) */
+.main-timeline {
+  position: relative;
+}
+
+/* The actual timeline (the vertical ruler) */
+.main-timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: #939597;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.timeline {
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -13px;
+  background-color: #939597;
+  border: 5px solid #f5df4d;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  padding: 0px 40px 20px 0px;
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  padding: 0px 0px 20px 40px;
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -12px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .main-timeline::after {
+    left: 31px;
+  }
+
+  /* Full-width containers */
+  .timeline {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .timeline::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after,
+  .right::after {
+    left: 18px;
+  }
+
+  .left::before {
+    right: auto;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+
+
+
+/*for SKILLStimeline*/
+/* The actual timeline (the vertical ruler) */
+.smain-stimeline {
+  position: relative;
+}
+
+/* The actual timeline (the vertical ruler) */
+.smain-stimeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: #939597;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.stimeline {
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.stimeline::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -13px;
+  background-color: #939597;
+  border: 5px solid #f5df4d;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.sleft {
+  padding: 0px 40px 20px 0px;
+  left: 0;
+}
+
+/* Place the container to the right */
+.sright {
+  padding: 0px 0px 20px 40px;
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.sleft::before {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.sright::before {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.sright::after {
+  left: -12px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .smain-stimeline::after {
+    left: 31px;
+  }
+
+  /* Full-width containers */
+  .stimeline {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .stimeline::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .sleft::after,
+  .sright::after {
+    left: 18px;
+  }
+
+  .sleft::before {
+    right: auto;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .sright {
+    left: 0%;
+  }
+}
+
+    </style>
+
+
+</head>
+
+<body>
+   
+
+    <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="bio.html">
+            <img src="img/profilepic.jpeg" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> 
+          </a>
+          
+          <ul class="navbar-nav">
+            <a class="navbar-brand" href="https://www.linkedin.com/in/rachit-patel-666494167">
+                <img src="img/linkedin.png" alt="Avatar Logo" style="width:30px;" class="rounded-pill"> 
+              </a>
+            <li class="nav-item">
+                <a class="nav-link" style="font-size:20px;" href="https://www.linkedin.com/in/rachit-patel-666494167"><strong>LinkedIn</strong></a>
+            </li>
+            <a class="navbar-brand" href="https://auth.geeksforgeeks.org/user/rachitpatell98">
+                <img src="img/gfg.jpeg" alt="Avatar Logo" style="width:30px;" class="rounded-pill"> 
+              </a>
+            <li class="nav-item">
+                <a class="nav-link" style="font-size:20px;" href="https://auth.geeksforgeeks.org/user/rachitpatell98"><strong>GFG Profile</strong> </a>
+            </li>
+            <a class="navbar-brand" href="https://www.linkedin.com/in/rachit-patel-666494167">
+              <img src="img/college.png" alt="Avatar Logo" style="width:30px;" class="rounded-pill"> 
+            </a>
+            <li class="nav-item">
+              <a class="nav-link" style="font-size:20px;" href="#"><strong>Education</strong></a>
+            </li>
+            <a class="navbar-brand" href="https://www.linkedin.com/in/rachit-patel-666494167">
+              <img src="img/project.png" alt="Avatar Logo" style="width:30px;" class="rounded-pill"> 
+            </a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"  style="font-size:20px;" href="#" role="button" data-bs-toggle="dropdown"><strong>Projects</strong></a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="index.html">Sorting Visualizer</a></li>
+                  <li><a class="dropdown-item" href="#">Decentralized Storage</a></li>
+                  <li><a class="dropdown-item" href="#">A third link</a></li>
+                </ul>
+              </li>
+              <a class="navbar-brand" href="https://www.linkedin.com/in/rachit-patel-666494167">
+                <img src="img/intership.png" alt="Avatar Logo" style="width:30px;" class="rounded-pill"> 
+              </a>
+            <li class="nav-item">
+              <a class="nav-link" style="font-size:20px;" href="#"><strong>Interships</strong></a>
+            </li>
+            <a class="navbar-brand" href="https://www.linkedin.com/in/rachit-patel-666494167">
+                <img src="img/cv.png" alt="Avatar Logo" style="width:30px;" class="rounded-pill"> 
+              </a>
+            <li class="nav-item">
+                <a class="nav-link" style="font-size:20px;" href="img/ResumeRACHIT_PATEL_1.pdf"><strong>DownloadCV</strong></a>
+              </li>
+          </ul>
+        </div>
+    </nav>
+
+     <!-- main banner -->
+     <section class="bgimage" id="home">
+        <div class="container-fluid">
+            <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+                <h2 class="hero_title">Hi, it's me Rachit Patel</h2>
+                <p class="hero_desc">I am a Software developer</p>
+            </div>
+            </div>
+            
+    
+
+        </div>
+    </section>
+
+
+    <br>
+    <br>
+    <div class ="container">
+    <figure class="text-justify">
+        <blockquote class="blockquote">
+          <p style="text-align:justify;"><i><strong>OBJECTIVE</strong> - To excel as a Software Development Engineer in a job that both challenges and inspires me, while pushing me to work to the best of my abilities and produce the highest quality work that I am capable of. Eager to apply my skills and knowledge gained through education and internships to contribute to innovative software solutions. Committed to continuous learning and growth in the field of software development.
+          </i></p>
+        </blockquote>
+        <figcaption style="margin-left: 50%;"class="blockquote-footer">
+          Rachit Patel
+        </figcaption>
+      </figure>  
+    </div>  
+    
+
+    <br>
+    <br>
+
+    <!-- about section-->
+    <section id="about">
+      <div class="container mt-4 pt-4">
+          <h1 class="text-center">About Me</h1>
+          <div class="row mt-4">
+              <div class="col-lg-4">
+                  <img src="img/profilepic.jpeg" class= "imageAboutPage" alt="">
+              </div>
+
+              <div class="col-lg-8">
+                  <p> 
+                  </p>
+                  
+                      <div style="text-align: justify;" class="col-md-100">
+                          <ul>
+                              <li>Name: Rachit Patel</li>
+                              <li>Age: 25</li>
+                              <li>Occupation: Software Developer</li>
+                              <li>Languages: English (Professional) | Hindi (Native) | Gujarati (Native)</li>
+                              <br>
+                              <li>I am driven by a strong desire to excel as a Software Development Engineer in a role that not only challenges me but also inspires me to push the boundaries of my abilities. With a firm belief in the power of continuous improvement, I am eager to apply the skills and knowledge I have gained through my education and internships to contribute to the creation of innovative software solutions.</li>
+                              <li>Throughout my academic journey, I have demonstrated a relentless pursuit of excellence. In my Master of Technology (M.Tech) program in Software Engineering at Delhi Technological University, I have consistently achieved outstanding results, maintaining an impressive CGPA of 9.65 during my first year. This rigorous academic training has equipped me with a strong technical foundation and a deep understanding of software development principles.</li>                      
+                          </ul>
+                      </div>
+                  </div>
+                  <div style="text-align: justify;" class="row mt-3">
+                    <p>
+                      <ul>
+                      <li>During my Bachelor of Technology in Computer Science and Engineering at Guru Gobind Singh Indraprastha University, I honed my programming skills and gained practical experience in various domains of computer science. With a notable CGPA of 8.89, I demonstrated my dedication and commitment to academic excellence.</li>
+                      
+                      <li>As a Data Science and Python Developer Intern at Sarvvid AI, New Delhi, I had the opportunity to work on challenging projects that allowed me to apply my skills in a practical setting. I contributed to the development of a decentralized data storage solution, leveraging Python to ensure efficient data management within the organization. Additionally, I actively participated in a project that focused on improving data compression rates using machine learning and data science techniques.</li>
+                      
+                    </div>
+              </div>
+          </div>
+  </section>
+
+  <br>
+  <br>
+ 
+  <h2 style="text-align: justify; margin-left: 10%;font-family: 'Times New Roman', Times, serif;""><strong>TIMELINE</strong></h2>
+  <section style="background-color: #F0F2F5;">
+    <div class="container py-5">
+      <div class="main-timeline">
+        <div class="timeline left">
+          <div class="card">
+            <div class="card-body p-4">
+              <h3>2022-2024 - MTECH (SWE)</h3>
+              <p class="mb-0">Throughout my academic journey, I have demonstrated a relentless pursuit of excellence. In my Master of Technology (M.Tech) program in Software Engineering at Delhi Technological University, I have consistently achieved outstanding results, maintaining an impressive CGPA of 9.65 during my first year. This rigorous academic training has equipped me with a strong technical foundation and a deep understanding of software development principles.                
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="timeline right">
+          <div class="card">
+            <div class="card-body p-4">
+              <h3>Oct,2020- June,2021 - INTERSHIP</h3>
+              <p class="mb-0">As a Data Science and Python Developer Intern at Sarvvid AI, New Delhi, I had the opportunity to work on challenging projects that allowed me to apply my skills in a practical setting. I contributed to the development of a decentralized data storage solution, leveraging Python to ensure efficient data management within the organization. Additionally, I actively participated in a project that focused on improving data compression rates using machine learning and data science techniques.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="timeline left">
+          <div class="card">
+            <div class="card-body p-4">
+              <h3>2016-2020 - BTECH (CSE)</h3>
+              <p class="mb-0">During my Bachelor of Technology in Computer Science and Engineering at Guru Gobind Singh Indraprastha University, I honed my programming skills and gained practical experience in various domains of computer science. With a notable CGPA of 8.89, I demonstrated my dedication and commitment to academic excellence.</p>
+            </div>
+          </div>
+        </div>
+        <div class="timeline right">
+          <div class="card">
+            <div class="card-body p-4">
+              <h3>2016 - XII </h3>
+              <p class="mb-0">Passed XIIth,CBSE Universal Public School Score - 89.9% </p>
+            </div>
+          </div>
+        </div>
+        <div class="timeline left">
+          <div class="card">
+            <div class="card-body p-4">
+              <h3>2014</h3>
+              <p class="mb-0">Pass Xth,CBSE Universal Public School Score- 9.6 CGPA</p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <br>
+  <br>
+
+    <div class="card-group">
+        <div class="card me-3">
+        <img src="img/college.png" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">EDUCATION</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+        
+        </div>
+        <div class="card me-3">
+        <img src="img/project.png"  class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">PROJECTS</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        </div>
+        
+        </div>
+        <div class="card">
+        <img src="img/intership.png" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">INTERNSHIPS</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        </div>
+        
+        </div>
+    </div>
+
+    <br>
+    <br>
+    
+    <h2 style="text-align: justify; margin-left: 10%;font-family: 'Times New Roman', Times, serif;""><strong>SKILLS</strong></h2>
+
+
+    <section style="background-color: #F0F2F5;">
+        <div class="container py-5">
+          <div class="smain-stimeline">
+            <div class="stimeline sleft">
+              <div class="card">
+                <div class="card-body p-4">
+                  <h3>TECHNICAL SKILLS</h3>
+                  <p class="mb-0"><ul>
+                    <li>- Proficient in programming languages: C++, Python</li>
+                    <li>- Familiarity with web development technologies: HTML, CSS, JavaScript</li>
+                    <li>- Experience with version control systems : Git</li>
+                    <li>- Understanding of data structures and algorithms</li>
+                  </ul></p>
+                </div>
+              </div>
+            </div>
+            <div class="stimeline sright">
+              <div class="card">
+                <div class="card-body p-4">
+                  <h3>NON TECHNICAL</h3>
+                  <p class="mb-0"><ul>
+                    <li>-Knowledge of software development methodologies and practices</li>
+                    <li>-Communication Skills</li>
+                    <li>-Team Player</li>
+                </ul></p>
+                </div>
+              </div>
+            </div>
+                <div class="timeline left">
+                    <div class="card">
+                    <div class="card-body p-4">
+                    <h3>COMPETENCIES & AREA OF INTEREST</h3>
+                    <p class="mb-0"><ul>
+                        <li>-Software Development.</li>
+                        <li>-Blockchain</li>
+                        <li>-Machine Learning</li>
+                        <li>-C++/Python backend development</li>
+                        <li>-Data science and Machine Learning</li>
+                    </ul>
+                    </p>
+                    </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            </div>
+            </section>
+
+    <br>
+    <br>
+
+    <div style="width: 80%;height:auto;"class="container">
+    <p><b>Programming Languages</b></p>
+    <p>Python</p>
+    <div class="container">
+    <div class="skills Python">90%</div>
+    </div>
+
+    <p>C++</p>
+    <div class="container">
+    <div class="skills c++">80%</div>
+    </div>
+
+    <br>
+    <br>
+
+    <p><strong>Web Development</strong></p>
+    <p>JavaScript</p>
+    <div class="container">
+    <div class="skills js">65%</div>
+    </div>
+
+    <p>HTML & CSS </p>
+    <div class="container">
+    <div class="skills htmlcss">60%</div>
+    <br>
+    </div>
+    </div>
+
+    <br>
+    <br>
+    
+<br>
+<br>
+<section id="contact">
+    <div style="width: 40%;"class="container">
+        <h1 class="text-center">Contact Me</h1>
+
+        <div class="row mt-4">
+            
+
+            <div class="col-lg-6">
+                <!-- form fields -->
+                <form>
+                    <input type="text" class="form-control form-control-lg" placeholder="Name">
+                    <input type="email" class="form-control mt-3" placeholder="Email">
+                    <input type="text" class="form-control mt-3" placeholder="Subject">
+                    <div class="mb-3 mt-3">
+                        <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
+                    </div>
+                </form>
+                <button type="button" class="btn btn-success mt-3">Contact Me</button>
+                
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+</body>
+</html>
