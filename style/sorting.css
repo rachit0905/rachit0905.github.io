@@ -6,6 +6,19 @@
     src: url("Fonts/Pacifico-Regular.woff2") format('woff2');
 }
 
+table{
+    
+    border: 5px solid #000000;
+    border-collapse: collapse;
+}
+
+hr {
+	border: 0;
+	margin-left: 2%;
+	margin-right: 2%;
+	border-top: 4px solid brown;
+	border-radius: 5px;
+  }
 #container{
 	display: flex;
 	margin: 0 auto;
@@ -81,7 +94,12 @@ h1{
 	display: inline-flex;
 	justify-content: center;
 }
-
+footer {
+	text-align: center;
+	padding: 3px;
+	background-color: DarkSalmon;
+	color: white;
+  }
 .vars{
 	width: 60%;
 	align-self: flex-start;

@@ -14,7 +14,6 @@
  	width: -webkit-max-content;
 	height: 60%;
 	background-image: url("img/image.png");
-
 }
 
 #b{
@@ -36,7 +35,7 @@
 	display: grid;
 	font-weight: bold;
 	background-color:rgb(183, 219, 241);
-	margin: 0;
+	margin-left: 0;
 	color: rgb(14, 1, 1);
 	padding: 1vw 1vw 2vw 1vw;
 	margin-bottom: 2vw;
@@ -62,7 +61,7 @@
 
 h1{
 	font-size: 3vw;
-	font-family: 'Times New Roman', Times, serif
+	font-family: 'Times New Roman', Times, serif;
 	font-weight: lighter;
 	width: 35%;
 	text-align: center;
@@ -86,9 +85,46 @@ h1{
 	justify-content: center;
 	
 }
-
+.btn-group button {
+	background-color:green; /* Green background */
+	border: 1px solid green; /* Green border */
+	color: white; /* White text */
+	padding: 10px 24px; /* Some padding */
+	cursor: pointer; /* Pointer/hand icon */
+	float: left; /* Float the buttons side by side */
+	
+		box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	  
+  }
+  
+  .btn-group button:not(:last-child) {
+	border-right: none; /* Prevent double borders */
+  }
+  
+  /* Clear floats (clearfix hack) */
+  .btn-group:after {
+	content: "";
+	clear: both;
+	display: table;
+  }
+  
+  /* Add a background color on hover */
+  .btn-group button:hover {
+	background-color: #3e8e41;
+  }
+  footer {
+	text-align: center;
+	padding: 3px;
+	background-color: DarkSalmon;
+	color: white;
+  }
+table{
+    
+    border: 5px solid #000000;
+    border-collapse: collapse;
+}
 .vars{
-	width: 60%;
+	width: 100%;
 	align-self: flex-start;
 	text-align: center;
 	font-size: 1.3vw;
@@ -112,7 +148,7 @@ input[type="button"], button{
 	border: none;
 	padding: 1.3vh;
 	border-radius: 9vw;
-	min-width: 8vw;
+	min-width: 6vw;
 	color: rgb(6, 6, 223);
 	font-size: 1.2vw;
 }
