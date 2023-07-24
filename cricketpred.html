@@ -1,0 +1,1414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>MEDICAL BOT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
+
+	<link rel="stylesheet" type="text/css" href="style/sorting.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <style>
+
+
+
+hr {
+  border: 0;
+  margin-left: 2%;
+  margin-right: 2%;
+  border-top: 4px solid brown;
+  border-radius: 5px;
+}
+ /* hero background image */
+.bgimage {
+    height:100vh;
+    background: url('/img/machine_learning_projects.jpeg');
+    background-size:cover;
+    position:relative;
+}
+/* text css above hero image*/
+.hero_title {
+    font-size: 4.5rem;
+}
+
+/* about section image css */
+.imageAboutPage {
+    width: 100%;
+}
+
+.hero_desc {
+    font-size: 2rem;
+}
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+
+      </style>
+   </head>
+   <body>
+
+    <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
+        <div class="container-fluid" >
+          <a class="navbar-brand" href="bio.html">
+            <img src="img/profilepic.jpeg" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> 
+          </a>
+          
+          <ul class="navbar-nav">
+            <a class="navbar-brand" href="https://www.linkedin.com/in/rachit-patel-666494167">
+                <img src="img/linkedin.png" alt="Avatar Logo" style="width:30px;" class="rounded-pill"> 
+              </a>
+            <li class="nav-item">
+                <a class="nav-link" style="font-size:20px;" href="https://www.linkedin.com/in/rachit-patel-666494167"><strong>LinkedIn</strong></a>
+            </li>
+            <a class="navbar-brand" href="https://auth.geeksforgeeks.org/user/rachitpatell98">
+                <img src="img/gfg.jpeg" alt="Avatar Logo" style="width:30px;" class="rounded-pill"> 
+              </a>
+            <li class="nav-item">
+                <a class="nav-link" style="font-size:20px;" href="https://auth.geeksforgeeks.org/user/rachitpatell98"><strong>GFG Profile</strong> </a>
+            </li>
+            <a class="navbar-brand" href="https://www.linkedin.com/in/rachit-patel-666494167">
+              <img src="img/college.png" alt="Avatar Logo" style="width:30px;" class="rounded-pill"> 
+            </a>
+            <li class="nav-item">
+              <a class="nav-link" style="font-size:20px;" href="#"><strong>Education</strong></a>
+            </li>
+            <a class="navbar-brand" href="https://www.linkedin.com/in/rachit-patel-666494167">
+              <img src="img/project.png" alt="Avatar Logo" style="width:30px;" class="rounded-pill"> 
+            </a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"  style="font-size:20px;" href="#" role="button" data-bs-toggle="dropdown"><strong>Projects</strong></a>
+                <ul class="dropdown-menu">
+                    <a class="nav-link dropdown-togglee"  style="font-size:15px;" href="mlprojects.html" role="button" data-bs-toggle="dropdown"><strong>DSA PROJECTS</strong></a>
+
+                  <li><a class="dropdown-item" href="index.html">Sorting Visualizer</a></li>
+                  <li><a class="dropdown-item" href="sudoko.html">Sudoku Solver</a></li>
+
+                  <a class="nav-link dropdown-togglee"  style="font-size:15px;" href="mlprojects.html" role="button" data-bs-toggle="dropdown"><strong>STORAGE BASED</strong></a>
+
+                  <li><a class="dropdown-item" href="decentral.html">Decentralized Storage</a></li>
+                  <li class="nav-item dropdown">                
+                   
+                    <a class="nav-link dropdown-togglee"  style="font-size:15px;" href="mlprojects.html" role="button" data-bs-toggle="dropdown"><strong>ML PROJECTS</strong></a>
+                    <ul class="dropdown-menuu">
+                        <li><a class="dropdown-item" href="mlprojects.html">Medical Bot</a></li>
+                        <li><a class="dropdown-item" href="ehr_blockchain.html">ACADEMIC</a></li>
+                                       
+                        </ul>      
+                
+                    </li>
+                </ul>
+            </li>
+            
+              <a class="navbar-brand" href="https://www.linkedin.com/in/rachit-patel-666494167">
+                <img src="img/intership.png" alt="Avatar Logo" style="width:30px;" class="rounded-pill"> 
+              </a>
+            <li class="nav-item">
+              <a class="nav-link" style="font-size:20px;" href="#"><strong>Interships</strong></a>
+            </li>
+            <a class="navbar-brand" href="https://www.linkedin.com/in/rachit-patel-666494167">
+                <img src="img/cv.png" alt="Avatar Logo" style="width:30px;" class="rounded-pill"> 
+              </a>
+            <li class="nav-item">
+                <a class="nav-link" style="font-size:20px;" href="img/ResumeRACHIT_PATEL_1.pdf"><strong>DownloadCV</strong></a>
+              </li>
+          </ul>
+        </div>
+    </nav>
+
+
+           <!-- main banner -->
+      <section class="bgimage" id="home">
+  </section>       
+  
+  <br>
+  <br>
+ <hr><br>
+  <div class ="container">
+  <figure class="text-justify">
+      <blockquote class="blockquote">
+        <p style="text-align:justify;"><i><strong><center>ABOUT THE PROJECT</center></strong> </i></p>
+            <p><i> <strong>CRICKET_PREDICTION</strong> - A Python Project for Predicting Playing 11 for Three Nations: India, Australia, and England
+
+                
+                I am excited to share details about a Python project I developed called CRICKET_PREDICTION. This innovative project utilizes machine learning algorithms and statistical analysis to predict the playing 11 for the three prominent cricketing nations: India, Australia, and England. By leveraging historical performance data, player statistics, and various other factors, the project aims to provide accurate insights into the selection of the playing 11 for upcoming cricket matches.</i></p>
+      
+        </blockquote>
+      
+    </figure>  
+  </div>  
+  <br>
+  <hr>
+  <br>
+  <br>
+  <div class="header1">
+    <h1>CODE SNIPPETS</h1>
+</div>
+<table>
+    <tr>
+      <th><br>
+        <h2 style="font-family:times new roman ;text-align: center;"><b>PYTHON CODE</b></h2>
+        <br></th>
+    </tr>
+    <tr>
+      <td> <div class="container">
+        <pre class="line-numbers">
+            <code class="language-css">
+for i in range(0,4):
+    print('1.INDIA')
+    print('2.AUSTRALIA')
+    print('3.ENGLAND')
+    print('4.Exit')
+    x=int(input('ENTER THE CHOICE'))
+    if x==1:
+        for i in range(0,3):
+            print('1.T20')
+            print('2.ODI')
+            print('3.TEST')
+            print('4.EXIT')
+            y=int(input('ENTER THE FORMAT'))
+            if y==1:
+                print('T20')
+                import numpy as np      
+                import pandas as pd
+                import matplotlib.pyplot as plt
+                
+                #importing dataset
+                dataset=pd.read_csv('india_t20.csv')
+                print('*******PLAYING  11 PREDICTOR*********')            
+                print('=========')
+                print('INDIA T20')
+                print('=========')
+                c=int(input('1.ENTER THE NUMBER OF BATSMAN'))
+                d=int(input('2.ENTER THE NUMBER OF BOWLERS'))
+                e=int(input('3.ENTER THE NUMBER OF WICKETKIPPERS'))
+                
+                f=c+d+e
+                if f==11:
+                    for i in range(0,3):    
+                            a=int(input('enter your choice'))
+                            if a==1:
+                        
+                                print('=======')
+                                print('BATSMAN')
+                                print('=======')
+                                X=dataset.iloc[:,[4,5,7]].values      
+                                Y=dataset.iloc[:,[9]].values
+                                
+                                #splitting the dataset into training set and test set
+                                from sklearn.model_selection import train_test_split
+                                
+                                X_train, X_test, Y_train, Y_test = train_test_split(X,Y,test_size=1/3,random_state=0)
+                                
+                                
+                                #Fitting simple linear Regression to the training set
+                                from sklearn.linear_model import LinearRegression
+                                regressor = LinearRegression()
+                                regressor.fit(X_train,Y_train)
+                                dataset1=pd.read_csv('india_t20_test.csv')
+                                X1=dataset1.iloc[:,[4,5,7]].values      
+                                Y1=dataset1.iloc[:,[9]].values
+                                Y_predict=regressor.predict(X1)    
+                                dataset1['Avg']=Y_predict
+                                
+                                dataset1.to_csv("result1.csv", columns=['Cap','Name','Avg'], index=False)
+                                
+                                dataset2=pd.read_csv('result1.csv')
+                                X3=dataset2.iloc[:,:].values
+                                
+                                
+                                df = pd.DataFrame(X3)
+                                result = df.sort_values(by=2,ascending=False)
+                                print(result.head(c))
+                           
+                            elif a==2:
+                                
+                                print('======')
+                                print('BOWLER')
+                                print('======')
+                                                
+                                X=dataset.iloc[:,[4,13]].values      
+                                Y=dataset.iloc[:,[15]].values
+                                
+                                #splitting the dataset into training set and test set
+                                from sklearn.model_selection import train_test_split
+                                
+                                X_train, X_test, Y_train, Y_test = train_test_split(X,Y,test_size=1/3,random_state=0)
+                                
+                                
+                                #Fitting simple linear Regression to the training set
+                                from sklearn.linear_model import LinearRegression
+                                regressor = LinearRegression()
+                                regressor.fit(X_train,Y_train)
+                                dataset1=pd.read_csv('india_t20_test.csv')
+                                X1=dataset1.iloc[:,[4,13]].values      
+                                Y1=dataset1.iloc[:,[15]].values
+                                Y_predict=regressor.predict(X1)    
+                                dataset1['Wkt']=Y_predict
+                                
+                                dataset1.to_csv("result2.csv", columns=['Cap','Name','Wkt'], index=False)
+                                
+                                dataset2=pd.read_csv('result2.csv')
+                                X3=dataset2.iloc[:,:].values
+                                
+                                df = pd.DataFrame(X3)
+                                result = df.sort_values(by=2,ascending=False)
+                                print('BOWLERS')
+                                print(result.head(d))        
+                             
+                                
+                            elif a==3:
+                                print('============')
+                                print('WICKETKEEPER')
+                                print('============')
+                                X=dataset.iloc[:,[13,17]].values      
+                                Y=dataset.iloc[:,[18]].values
+                                
+                                #splitting the dataset into training set and test set
+                                from sklearn.model_selection import train_test_split
+                                
+                                X_train, X_test, Y_train, Y_test = train_test_split(X,Y,test_size=1/3,random_state=0)
+                                
+                                
+                                #Fitting simple linear Regression to the training set
+                                from sklearn.linear_model import LinearRegression
+                                regressor = LinearRegression()
+                                regressor.fit(X_train,Y_train)
+                                dataset1=pd.read_csv('india_t20_test.csv')
+                                X1=dataset1.iloc[:,[13,17]].values      
+                                Y1=dataset1.iloc[:,[18]].values
+                                Y_predict=regressor.predict(X1)    
+                                dataset1['St']=Y_predict
+                                
+                                dataset1.to_csv("result3.csv", columns=['Cap','Name','St'], index=False)
+                                
+                                dataset2=pd.read_csv('result3.csv')
+                                X3=dataset2.iloc[:,:].values
+                                
+                                
+                                df = pd.DataFrame(X3)
+                                result = df.sort_values(by=2,ascending=False)
+                                print(result.head(e))
+                                
+                else:
+                        print('THE SUM OF ALL PLAYERS SHOULD BE 11')
+                        
+            elif y==2:
+                print('ODI')
+                import numpy as np      
+                import pandas as pd
+                import matplotlib.pyplot as plt
+                
+                #importing dataset
+                dataset=pd.read_csv('india_odi.csv')
+                print('*******PLAYING  11 PREDICTOR*********')
+                print('=========')
+                print('INDIA ODI')
+                print('=========')
+                c=int(input('1.ENTER THE NUMBER OF BATSMAN'))
+                d=int(input('2.ENTER THE NUMBER OF BOWLERS'))
+                e=int(input('3.ENTER THE NUMBER OF WICKETKIPPERS'))
+                
+                f=c+d+e
+                if f==11:
+                    for i in range(0,3):    
+                            a=int(input('enter your choice'))
+                            if a==1:
+                                print('=======')
+                                print('BATSMAN')
+                                print('=======')
+                                X=dataset.iloc[:,[4,5,7]].values      
+                                Y=dataset.iloc[:,[9]].values
+                                
+                                #splitting the dataset into training set and test set
+                                from sklearn.model_selection import train_test_split
+                                
+                                X_train, X_test, Y_train, Y_test = train_test_split(X,Y,test_size=1/3,random_state=0)
+                                
+                                
+                                #Fitting simple linear Regression to the training set
+                                from sklearn.linear_model import LinearRegression
+                                regressor = LinearRegression()
+                                regressor.fit(X_train,Y_train)
+                                dataset1=pd.read_csv('india_odi_test.csv')
+                                X1=dataset1.iloc[:,[4,5,7]].values      
+                                Y1=dataset1.iloc[:,[9]].values
+                                Y_predict=regressor.predict(X1)    
+                                dataset1['Avg']=Y_predict
+                                
+                                dataset1.to_csv("result1.csv", columns=['Cap','Name','Avg'], index=False)
+                                
+                                dataset2=pd.read_csv('result1.csv')
+                                X3=dataset2.iloc[:,:].values
+                                
+                                
+                                df = pd.DataFrame(X3)
+                                result = df.sort_values(by=2,ascending=False)
+                                print(result.head(c))
+                           
+                            elif a==2:
+                                print('======')
+                                print('BOWLER')
+                                print('======')
+                                X=dataset.iloc[:,[10,11,12]].values      
+                                Y=dataset.iloc[:,[15]].values
+                                
+                                #splitting the dataset into training set and test set
+                                from sklearn.model_selection import train_test_split
+                                
+                                X_train, X_test, Y_train, Y_test = train_test_split(X,Y,test_size=1/3,random_state=0)
+                                
+                                
+                                #Fitting simple linear Regression to the training set
+                                from sklearn.linear_model import LinearRegression
+                                regressor = LinearRegression()
+                                regressor.fit(X_train,Y_train)
+                                dataset1=pd.read_csv('india_odi_test.csv')
+                                X1=dataset1.iloc[:,[10,11,12]].values      
+                                Y1=dataset1.iloc[:,[15]].values
+                                Y_predict=regressor.predict(X1)    
+                                dataset1['Wkt']=Y_predict
+                                
+                                dataset1.to_csv("result2.csv", columns=['Cap','Name','Wkt'], index=False)
+                                
+                                dataset2=pd.read_csv('result2.csv')
+                                X3=dataset2.iloc[:,:].values
+                                
+                                df = pd.DataFrame(X3)
+                                result = df.sort_values(by=2,ascending=False)
+                                print('BOWLERS')
+                                print(result.head(d))        
+                             
+                                
+                            elif a==3:
+                                print('=============')
+                                print('WICKET KEEPER')
+                                print('=============')
+                                
+                                
+                                X=dataset.iloc[:,[13,16]].values      
+                                Y=dataset.iloc[:,[17]].values
+                                
+                                #splitting the dataset into training set and test set
+                                from sklearn.model_selection import train_test_split
+                                
+                                X_train, X_test, Y_train, Y_test = train_test_split(X,Y,test_size=1/3,random_state=0)
+                                
+                                
+                                #Fitting simple linear Regression to the training set
+                                from sklearn.linear_model import LinearRegression
+                                regressor = LinearRegression()
+                                regressor.fit(X_train,Y_train)
+                                dataset1=pd.read_csv('india_odi_test.csv')
+                                X1=dataset1.iloc[:,[13,16]].values      
+                                Y1=dataset1.iloc[:,[17]].values
+                                Y_predict=regressor.predict(X1)    
+                                dataset1['St']=Y_predict
+                                
+                                dataset1.to_csv("result3.csv", columns=['Cap','Name','St'], index=False)
+                                
+                                dataset2=pd.read_csv('result3.csv')
+                                X3=dataset2.iloc[:,:].values
+                                
+                                
+                                df = pd.DataFrame(X3)
+                                result = df.sort_values(by=2,ascending=False)
+                                print(result.head(e))
+                                
+                else:
+                        print('THE SUM OF ALL PLAYERS SHOULD BE 11')
+        
+            elif y==3:
+                print('TEST')
+                import numpy as np      
+                import pandas as pd
+                import matplotlib.pyplot as plt
+                
+                dataset=pd.read_csv('india_test.csv')
+                
+                print('*******PLAYING  11 PREDICTOR*********')
+                print('================')
+                print('INDIA TEST MATCH')
+                print('================')
+                c=int(input('1.ENTER THE NUMBER OF BATSMAN'))
+                d=int(input('2.ENTER THE NUMBER OF BOWLERS'))
+                e=int(input('3.ENTER THE NUMBER OF WICKETKIPPERS'))
+                f=c+d+e
+                if f==11:
+                    for i in range(0,3):    
+                            a=int(input('enter your choice'))
+                            if a==1:
+                                print('=======')
+                                print('BATSMAN')
+                                print('=======')                
+                                X=dataset.iloc[:,[4,5,6]].values      
+                                Y=dataset.iloc[:,[7]].values
+                                #splitting the dataset into training set and test set
+                                from sklearn.model_selection import train_test_split
+                                X_train, X_test, Y_train, Y_test = train_test_split(X,Y,test_size=1/3,random_state=0)
+                                              
+                                #Fitting simple linear Regression to the training set
+                                from sklearn.linear_model import LinearRegression
+                                regressor = LinearRegression()
+                                regressor.fit(X_train,Y_train)
+                                dataset1=pd.read_csv('india_test_test.csv')
+                                X1=dataset1.iloc[:,[4,5,6]].values      
+                                Y1=dataset1.iloc[:,[7]].values
+                                Y_predict=regressor.predict(X1)    
+                                dataset1['Avg']=Y_predict
+                                
+                                dataset1.to_csv("resultindtest1.csv", columns=['Cap','Name','Avg'], index=False)
+                                
+                                dataset2=pd.read_csv('resultindtest1.csv')
+                                X3=dataset2.iloc[:,:].values
+                                df = pd.DataFrame(X3)
+                                result = df.sort_values(by=2,ascending=False)
+                                print(result.head(c))
+                           
+                            elif a==2:
+                                print('======')
+                                print('BOWLER')
+                                print('======')                
+                                X=dataset.iloc[:,[4,5,7]].values      
+                                Y=dataset.iloc[:,[9]].values
+                                
+                                #splitting the dataset into training set and test set
+                                from sklearn.model_selection import train_test_split
+                                
+                                X_train, X_test, Y_train, Y_test = train_test_split(X,Y,test_size=1/3,random_state=0)
+                                
+                                
+                                #Fitting simple linear Regression to the training set
+                                from sklearn.linear_model import LinearRegression
+                                regressor = LinearRegression()
+                                regressor.fit(X_train,Y_train)
+                                dataset1=pd.read_csv('india_test_test.csv')
+                                X1=dataset1.iloc[:,[4,5,7]].values      
+                                Y1=dataset1.iloc[:,[9]].values
+                                Y_predict=regressor.predict(X1)    
+                                dataset1['Wkt']=Y_predict
+                                
+                                dataset1.to_csv("resultindtest2.csv", columns=['Cap','Name','Wkt'], index=False)
+                                
+                                dataset2=pd.read_csv('resultindtest2.csv')
+                                X3=dataset2.iloc[:,:].values
+                                
+                                df = pd.DataFrame(X3)
+                                result = df.sort_values(by=2,ascending=False)
+                                print('BOWLERS')
+                                print(result.head(d))        
+                             
+                                
+                            elif a==3:
+                                print('===========')
+                                print('wicketkeper')
+                                print('===========')                
+                                X=dataset.iloc[:,[9,13]].values      
+                                Y=dataset.iloc[:,[14]].values
+                                
+                                #splitting the dataset into training set and test set
+                                from sklearn.model_selection import train_test_split
+                                
+                                X_train, X_test, Y_train, Y_test = train_test_split(X,Y,test_size=1/3,random_state=0)
+                                
+                                
+                                #Fitting simple linear Regression to the training set
+                                from sklearn.linear_model import LinearRegression
+                                regressor = LinearRegression()
+                                regressor.fit(X_train,Y_train)
+                                dataset1=pd.read_csv('india_test_test.csv')
+                                X1=dataset1.iloc[:,[9,13]].values      
+                                Y1=dataset1.iloc[:,[14]].values
+                                Y_predict=regressor.predict(X1)    
+                                dataset1['St']=Y_predict
+                                
+                                dataset1.to_csv("resultindtest3.csv", columns=['Cap','Name','St'], index=False)
+                                
+                                dataset2=pd.read_csv('resultindtest3.csv')
+                                X3=dataset2.iloc[:,:].values
+                                
+                                
+                                df = pd.DataFrame(X3)
+                                result = df.sort_values(by=2,ascending=False)
+                                print(result.head(e))
+                
+
+            elif y==4:
+                break
+                        
+    elif x==2:
+        for i in range(0,3):
+            print('1.T20')
+            print('2.ODI')
+            print('3.TEST')
+            print('4.EXIT')
+            y=int(input('ENTER THE FORMAT'))
+            if y==1:
+                               
+
+                print('=====================T20=====================')
+                
+                import numpy as np      
+                import pandas as pd
+                import matplotlib.pyplot as plt
+                
+                c=int(input('1.ENTER THE NUMBER OF BATSMAN'))
+                d=int(input('2.ENTER THE NUMBER OF BOWLERS'))
+                e=int(input('3.ENTER THE NUMBER OF WICKETKIPPERS'))
+                
+                f=c+d+e
+                if f==11:
+                    for i in range(0,3):    
+                            a=int(input('enter your choice'))
+                            if a==1:
+                        
+                                import numpy as np      
+                                import pandas as pd
+                                import matplotlib.pyplot as plt
+                                #def test2(x):
+                                 #   x=2
+                                #importing dataset
+                                dataset=pd.read_csv('aust201.csv')
+                                
+                                X=dataset.iloc[:,[3,4,5,6]].values      
+                                Y=dataset.iloc[:,[8]].values
+                                
+                                #splitting the dataset into training set and test set
+                                from sklearn.model_selection import train_test_split
+                                
+                                X_train, X_test, Y_train, Y_test = train_test_split(X,Y,test_size=1/3,random_state=0)
+                                
+                                
+                                #Fitting simple linear Regression to the training set
+                                from sklearn.linear_model import LinearRegression
+                                regressor = LinearRegression()
+                                regressor.fit(X_train,Y_train)
+                                dataset1=pd.read_csv('Book2.csv')
+                                X1=dataset1.iloc[:,[3,4,5,6]].values      
+                                Y1=dataset1.iloc[:,[8]].values
+                                Y_predict=regressor.predict(X1)    
+                                dataset1['Avg']=Y_predict
+                                
+                                dataset1.to_csv("resultfff.csv", columns=['Cap','Name','Avg'], index=False)
+                                
+                                dataset2=pd.read_csv('resultfff.csv')
+                                X3=dataset2.iloc[:,:].values
+                                
+                                
+                                df = pd.DataFrame(X3)
+                                result = df.sort_values(by=2,ascending=False)
+                                print(result.head(c))
+                           
+                            elif a==2:
+                                print('BOWLER')
+                        
+                                import numpy as np      
+                                import pandas as pd
+                                import matplotlib.pyplot as plt
+                                #def test2(x):
+                                 #   x=2
+                                #importing dataset
+                                dataset=pd.read_csv('aust201.csv')
+                                
+                                X=dataset.iloc[:,[3,9,10]].values      
+                                Y=dataset.iloc[:,[12]].values
+                                
+                                #splitting the dataset into training set and test set
+                                from sklearn.model_selection import train_test_split
+                                
+                                X_train, X_test, Y_train, Y_test = train_test_split(X,Y,test_size=1/3,random_state=0)
+                                
+                                
+                                #Fitting simple linear Regression to the training set
+                                from sklearn.linear_model import LinearRegression
+                                regressor = LinearRegression()
+                                regressor.fit(X_train,Y_train)
+                                dataset1=pd.read_csv('Book2.csv')
+                                X1=dataset1.iloc[:,[3,9,10]].values      
+                                Y1=dataset1.iloc[:,[12]].values
+                                Y_predict=regressor.predict(X1)    
+                                dataset1['Wkt']=Y_predict
+                                
+                                dataset1.to_csv("resultff.csv", columns=['Cap','Name','Wkt'], index=False)
+                                
+                                dataset2=pd.read_csv('resultff.csv')
+                                X3=dataset2.iloc[:,:].values
+                                
+                                df = pd.DataFrame(X3)
+                                result = df.sort_values(by=2,ascending=False)
+                                print('BOWLERS')
+                                print(result.head(d))        
+                             
+                                
+                            elif a==3:
+                                print('WICKETKEPPER')
+                                import numpy as np      
+                                import pandas as pd
+                                import matplotlib.pyplot as plt
+                                #def test2(x):
+                                 #   x=2
+                                #importing dataset
+                                dataset=pd.read_csv('aust201.csv')
+                                
+                                X=dataset.iloc[:,[3,4]].values      
+                                Y=dataset.iloc[:,[16]].values
+                                
+                                #splitting the dataset into training set and test set
+                                from sklearn.model_selection import train_test_split
+                                
+                                X_train, X_test, Y_train, Y_test = train_test_split(X,Y,test_size=1/3,random_state=0)
+                                
+                                
+                                #Fitting simple linear Regression to the training set
+                                from sklearn.linear_model import LinearRegression
+                                regressor = LinearRegression()
+                                regressor.fit(X_train,Y_train)
+                                dataset1=pd.read_csv('Book2.csv')
+                                X1=dataset1.iloc[:,[3,4]].values      
+                                Y1=dataset1.iloc[:,[16]].values
+                                Y_predict=regressor.predict(X1)    
+                                dataset1['St']=Y_predict
+                                
+                                dataset1.to_csv("resultffff.csv", columns=['Cap','Name','St'], index=False)
+                                
+                                dataset2=pd.read_csv('resultffff.csv')
+                                X3=dataset2.iloc[:,:].values
+                                
+                                
+                                df = pd.DataFrame(X3)
+                                result = df.sort_values(by=2,ascending=False)
+                                print(result.head(1))
+                                
+                else:
+                        print('THE SUM OF ALL PLAYERS SHOULD BE 11')
+        
+                
+                        
+
+            elif y==2:
+                print('odi')
+                print('=====================ODI=====================')
+                
+                import numpy as np      
+                import pandas as pd
+                import matplotlib.pyplot as plt
+                
+                c=int(input('1.ENTER THE NUMBER OF BATSMAN'))
+                d=int(input('2.ENTER THE NUMBER OF BOWLERS'))
+                e=int(input('3.ENTER THE NUMBER OF WICKETKIPPERS'))
+                
+                f=c+d+e
+                if f==11:
+                    for i in range(0,3):    
+                            a=int(input('enter your choice'))
+                            if a==1:
+                        
+                                import numpy as np      
+                                import pandas as pd
+                                import matplotlib.pyplot as plt
+                                #def test2(x):
+                                 #   x=2
+                                #importing dataset
+                                dataset=pd.read_csv('aus_odi1.csv')
+                                
+                                X=dataset.iloc[:,[3,4,5,6]].values      
+                                Y=dataset.iloc[:,[8]].values
+                                
+                                #splitting the dataset into training set and test set
+                                from sklearn.model_selection import train_test_split
+                                
+                                X_train, X_test, Y_train, Y_test = train_test_split(X,Y,test_size=1/3,random_state=0)
+                                
+                                
+                                #Fitting simple linear Regression to the training set
+                                from sklearn.linear_model import LinearRegression
+                                regressor = LinearRegression()
+                                regressor.fit(X_train,Y_train)
+                                dataset1=pd.read_csv('Book2.csv')
+                                X1=dataset1.iloc[:,[3,4,5,6]].values      
+                                Y1=dataset1.iloc[:,[8]].values
+                                Y_predict=regressor.predict(X1)    
+                                dataset1['Avg']=Y_predict
+                                
+                                dataset1.to_csv("resultodi1.csv", columns=['Cap','Name','Avg'], index=False)
+                                
+                                dataset2=pd.read_csv('resultodi1.csv')
+                                X3=dataset2.iloc[:,:].values
+                                
+                                
+                                df = pd.DataFrame(X3)
+                                result = df.sort_values(by=2,ascending=False)
+                                print(result.head(c))
+                           
+                            elif a==2:
+                                print('BOWLER')
+                        
+                                import numpy as np      
+                                import pandas as pd
+                                import matplotlib.pyplot as plt
+                                #def test2(x):
+                                 #   x=2
+                                #importing dataset
+                                dataset=pd.read_csv('aus_odi1.csv')
+                                
+                                X=dataset.iloc[:,[3,9,10]].values      
+                                Y=dataset.iloc[:,[12]].values
+                                
+                                #splitting the dataset into training set and test set
+                                from sklearn.model_selection import train_test_split
+                                
+                                X_train, X_test, Y_train, Y_test = train_test_split(X,Y,test_size=1/3,random_state=0)
+                                
+                                
+                                #Fitting simple linear Regression to the training set
+                                from sklearn.linear_model import LinearRegression
+                                regressor = LinearRegression()
+                                regressor.fit(X_train,Y_train)
+                                dataset1=pd.read_csv('Book2.csv')
+                                X1=dataset1.iloc[:,[3,9,10]].values      
+                                Y1=dataset1.iloc[:,[12]].values
+                                Y_predict=regressor.predict(X1)    
+                                dataset1['Wkt']=Y_predict
+                                
+                                dataset1.to_csv("resultodi2.csv", columns=['Cap','Name','Wkt'], index=False)
+                                
+                                dataset2=pd.read_csv('resultodi2.csv')
+                                X3=dataset2.iloc[:,:].values
+                                
+                                df = pd.DataFrame(X3)
+                                result = df.sort_values(by=2,ascending=False)
+                                print('BOWLERS')
+                                print(result.head(d))        
+                             
+                                
+                            elif a==3:
+                                print('WICKETKEPPER')
+                                import numpy as np      
+                                import pandas as pd
+                                import matplotlib.pyplot as plt
+                                #def test2(x):
+                                 #   x=2
+                                #importing dataset
+                                dataset=pd.read_csv('aus_odi1.csv')
+                                
+                                X=dataset.iloc[:,[3,4]].values      
+                                Y=dataset.iloc[:,[16]].values
+                                
+                                #splitting the dataset into training set and test set
+                                from sklearn.model_selection import train_test_split
+                                
+                                X_train, X_test, Y_train, Y_test = train_test_split(X,Y,test_size=1/3,random_state=0)
+                                
+                                
+                                #Fitting simple linear Regression to the training set
+                                from sklearn.linear_model import LinearRegression
+                                regressor = LinearRegression()
+                                regressor.fit(X_train,Y_train)
+                                dataset1=pd.read_csv('Book2.csv')
+                                X1=dataset1.iloc[:,[3,4]].values      
+                                Y1=dataset1.iloc[:,[16]].values
+                                Y_predict=regressor.predict(X1)    
+                                dataset1['St']=Y_predict
+                                
+                                dataset1.to_csv("resultodi3.csv", columns=['Cap','Name','St'], index=False)
+                                
+                                dataset2=pd.read_csv('resultodi3.csv')
+                                X3=dataset2.iloc[:,:].values
+                                
+                                
+                                df = pd.DataFrame(X3)
+                                result = df.sort_values(by=2,ascending=False)
+                                print(result.head(1))
+                                
+                else:
+                        print('THE SUM OF ALL PLAYERS SHOULD BE 11')
+
+            elif y==3:
+                
+                print('=====================TEST=====================')
+                
+                import numpy as np      
+                import pandas as pd
+                import matplotlib.pyplot as plt
+                
+                c=int(input('1.ENTER THE NUMBER OF BATSMAN'))
+                d=int(input('2.ENTER THE NUMBER OF BOWLERS'))
+                e=int(input('3.ENTER THE NUMBER OF WICKETKIPPERS'))
+                
+                f=c+d+e
+                if f==11:
+                    for i in range(0,3):    
+                            a=int(input('enter your choice'))
+                            if a==1:
+                        
+                                import numpy as np      
+                                import pandas as pd
+                                import matplotlib.pyplot as plt
+                                #def test2(x):
+                                 #   x=2
+                                #importing dataset
+                                dataset=pd.read_csv('austest.csv')
+                                
+                                X=dataset.iloc[:,[3,4,5,6]].values      
+                                Y=dataset.iloc[:,[8]].values
+                                
+                                #splitting the dataset into training set and test set
+                                from sklearn.model_selection import train_test_split
+                                
+                                X_train, X_test, Y_train, Y_test = train_test_split(X,Y,test_size=1/3,random_state=0)
+                                
+                                
+                                #Fitting simple linear Regression to the training set
+                                from sklearn.linear_model import LinearRegression
+                                regressor = LinearRegression()
+                                regressor.fit(X_train,Y_train)
+                                dataset1=pd.read_csv('Book2.csv')
+                                X1=dataset1.iloc[:,[3,4,5,6]].values      
+                                Y1=dataset1.iloc[:,[8]].values
+                                Y_predict=regressor.predict(X1)    
+                                dataset1['Avg']=Y_predict
+                                
+                                dataset1.to_csv("resulttest1.csv", columns=['Cap','Name','Avg'], index=False)
+                                
+                                dataset2=pd.read_csv('resulttest1.csv')
+                                X3=dataset2.iloc[:,:].values
+                                
+                                
+                                df = pd.DataFrame(X3)
+                                result = df.sort_values(by=2,ascending=False)
+                                print(result.head(c))
+                           
+                            elif a==2:
+                                print('BOWLER')
+                        
+                                import numpy as np      
+                                import pandas as pd
+                                import matplotlib.pyplot as plt
+                                #def test2(x):
+                                 #   x=2
+                                #importing dataset
+                                dataset=pd.read_csv('austest.csv')
+                                
+                                X=dataset.iloc[:,[3,9,10]].values      
+                                Y=dataset.iloc[:,[12]].values
+                                
+                                #splitting the dataset into training set and test set
+                                from sklearn.model_selection import train_test_split
+                                
+                                X_train, X_test, Y_train, Y_test = train_test_split(X,Y,test_size=1/3,random_state=0)
+                                
+                                
+                                #Fitting simple linear Regression to the training set
+                                from sklearn.linear_model import LinearRegression
+                                regressor = LinearRegression()
+                                regressor.fit(X_train,Y_train)
+                                dataset1=pd.read_csv('Book2.csv')
+                                X1=dataset1.iloc[:,[3,9,10]].values      
+                                Y1=dataset1.iloc[:,[12]].values
+                                Y_predict=regressor.predict(X1)    
+                                dataset1['Wkt']=Y_predict
+                                
+                                dataset1.to_csv("resulttest2.csv", columns=['Cap','Name','Wkt'], index=False)
+                                
+                                dataset2=pd.read_csv('resulttest2.csv')
+                                X3=dataset2.iloc[:,:].values
+                                
+                                df = pd.DataFrame(X3)
+                                result = df.sort_values(by=2,ascending=False)
+                                print('BOWLERS')
+                                print(result.head(d))        
+                             
+                                
+                            elif a==3:
+                                print('WICKETKEPPER')
+                                import numpy as np      
+                                import pandas as pd
+                                import matplotlib.pyplot as plt
+                                #def test2(x):
+                                 #   x=2
+                                #importing dataset
+                                dataset=pd.read_csv('austest.csv')
+                                
+                                X=dataset.iloc[:,[3,4]].values      
+                                Y=dataset.iloc[:,[16]].values
+                                
+                                #splitting the dataset into training set and test set
+                                from sklearn.model_selection import train_test_split
+                                
+                                X_train, X_test, Y_train, Y_test = train_test_split(X,Y,test_size=1/3,random_state=0)
+                                
+                                
+                                #Fitting simple linear Regression to the training set
+                                from sklearn.linear_model import LinearRegression
+                                regressor = LinearRegression()
+                                regressor.fit(X_train,Y_train)
+                                dataset1=pd.read_csv('Book2.csv')
+                                X1=dataset1.iloc[:,[3,4]].values      
+                                Y1=dataset1.iloc[:,[16]].values
+                                Y_predict=regressor.predict(X1)    
+                                dataset1['St']=Y_predict
+                                
+                                dataset1.to_csv("resulttest3.csv", columns=['Cap','Name','St'], index=False)
+                                
+                                dataset2=pd.read_csv('resulttest3.csv')
+                                X3=dataset2.iloc[:,:].values
+                                
+                                
+                                df = pd.DataFrame(X3)
+                                result = df.sort_values(by=2,ascending=False)
+                                print(result.head(1))
+                                
+
+            elif y==4:
+                break
+                
+
+
+    elif x==3:
+        for i in range(0,3):
+            print('1.T20')
+            print('2.ODI')
+            print('3.TEST')
+            print('4.EXIT')
+            y=int(input('ENTER THE FORMAT'))
+            if y==1:
+                print('T20')
+            
+                print('=================PLAYING 11 PREDICTION FOR T-20 MATCH==================')
+                print('ENGLAND T-20')
+                #Importing libraries
+                import numpy as np      
+                import pandas as pd
+                import matplotlib.pyplot as plt
+                
+                #Importing the dataset of test match
+                dataset=pd.read_csv('eng_t20.csv')
+                
+                c=int(input('1.ENTER THE NUMBER OF BATSMEN : '))
+                d=int(input('2.ENTER THE NUMBER OF BOWLERS : '))
+                e=int(input('3.ENTER THE NUMBER OF WICKETKIPPERS : '))
+                
+                f=c+d+e
+                if f==11:
+                    for i in range(0,3):    
+                            a=int(input('Among the three, which do u want to select : '))
+                            if a==1:
+                                print('*******')
+                                print('BATSMEN')
+                                print('*******')
+                                
+                                X=dataset.iloc[:,[4,5]].values      
+                                Y=dataset.iloc[:,[7]].values
+                                
+                                #splitting the dataset into training set and test set
+                                from sklearn.model_selection import train_test_split
+                                X_train, X_test, Y_train, Y_test = train_test_split(X,Y,test_size=1/3,random_state=0)
+                                
+                                
+                                #Fitting simple linear Regression to the training set
+                                from sklearn.linear_model import LinearRegression
+                                regressor = LinearRegression()
+                                regressor.fit(X_train,Y_train)
+                                
+                                #Importing the test dataset
+                                dataset1=pd.read_csv('t20_testdata.csv')
+                                X1=dataset1.iloc[:,[4,5]].values      
+                                Y1=dataset1.iloc[:,[7]].values
+                                Y_predict=regressor.predict(X1)    
+                                dataset1['Avg']=Y_predict
+                                
+                                dataset1.to_csv("result1.csv", columns=['Cap','Name','Avg'], index=False)
+                                
+                                dataset2=pd.read_csv('result1.csv')
+                                X3=dataset2.iloc[:,:].values
+                                
+                                
+                                df = pd.DataFrame(X3)
+                                result = df.sort_values(by=2,ascending=False)
+                                print(result.head(c))
+                           
+                            elif a==2:
+                                print('*******')
+                                print('BOWLERS')
+                                print('*******')
+                                
+                                X=dataset.iloc[:,[4,8,9]].values      
+                                Y=dataset.iloc[:,[11]].values
+                                
+                                #Splitting the dataset into training set and test set
+                                from sklearn.model_selection import train_test_split
+                                X_train, X_test, Y_train, Y_test = train_test_split(X,Y,test_size=1/3,random_state=0)
+                                
+                                
+                                #Fitting simple linear Regression to the training set
+                                from sklearn.linear_model import LinearRegression
+                                regressor = LinearRegression()
+                                regressor.fit(X_train,Y_train)
+                                
+                                #Importing the test dataset
+                                dataset1=pd.read_csv('t20_testdata.csv')
+                                X1=dataset1.iloc[:,[4,8,9]].values      
+                                Y1=dataset1.iloc[:,[11]].values
+                                Y_predict=regressor.predict(X1)    
+                                dataset1['Wkt']=Y_predict
+                                
+                                dataset1.to_csv("result2.csv", columns=['Cap','Name','Wkt'], index=False)
+                                
+                                dataset2=pd.read_csv('result2.csv')
+                                X3=dataset2.iloc[:,:].values
+                                
+                                df = pd.DataFrame(X3)
+                                result = df.sort_values(by=2,ascending=False)
+                                print(result.head(d))        
+                             
+                                
+                            elif a==3:
+                                print('*******')
+                                print('WICKETKEEPERS')
+                                print('*******')
+                                
+                                X=dataset.iloc[:,[9,12]].values      
+                                Y=dataset.iloc[:,[13]].values
+                                
+                                #splitting the dataset into training set and test set
+                                from sklearn.model_selection import train_test_split
+                                X_train, X_test, Y_train, Y_test = train_test_split(X,Y,test_size=1/3,random_state=0)
+                                
+                                
+                                #Fitting simple linear Regression to the training set
+                                from sklearn.linear_model import LinearRegression
+                                regressor = LinearRegression()
+                                regressor.fit(X_train,Y_train)
+                                
+                                #Importing the test dataset
+                                dataset1=pd.read_csv('t20_testdata.csv')
+                                X1=dataset1.iloc[:,[9,12]].values      
+                                Y1=dataset1.iloc[:,[13]].values
+                                Y_predict=regressor.predict(X1)    
+                                dataset1['St']=Y_predict
+                                
+                                dataset1.to_csv("result3.csv", columns=['Cap','Name','St'], index=False)
+                                
+                                dataset2=pd.read_csv('result3.csv')
+                                X3=dataset2.iloc[:,:].values
+                                
+                                
+                                df = pd.DataFrame(X3)
+                                result = df.sort_values(by=2,ascending=False)
+                                print(result.head(e))
+                                
+                else:
+                        print('THE SUM OF ALL PLAYERS SHOULD BE 11')
+        
+
+
+
+            elif y==2:
+                print('ODI')
+                print('==========PLAYING 11 PREDICTION FOR ONE DAY INTERNATIONAL MATCH============')
+                print('ENGLAND ODI')
+                #Importing libraries
+                import numpy as np      
+                import pandas as pd
+                import matplotlib.pyplot as plt
+                
+                #Importing the dataset of test match
+                dataset=pd.read_csv('england_odi.csv')
+                
+                c=int(input('1.ENTER THE NUMBER OF BATSMEN : '))
+                d=int(input('2.ENTER THE NUMBER OF BOWLERS : '))
+                e=int(input('3.ENTER THE NUMBER OF WICKETKIPPERS : '))
+                
+                f=c+d+e
+                if f==11:
+                    for i in range(0,3):    
+                            a=int(input('Among the three, which do u want to select : '))
+                            if a==1:
+                                print('*******')
+                                print('BATSMEN')
+                                print('*******')
+                                
+                                X=dataset.iloc[:,[4,5]].values      
+                                Y=dataset.iloc[:,[7]].values
+                                
+                                #splitting the dataset into training set and test set
+                                from sklearn.model_selection import train_test_split
+                                X_train, X_test, Y_train, Y_test = train_test_split(X,Y,test_size=1/3,random_state=0)
+                                
+                                
+                                #Fitting simple linear Regression to the training set
+                                from sklearn.linear_model import LinearRegression
+                                regressor = LinearRegression()
+                                regressor.fit(X_train,Y_train)
+                                
+                                #Importing the test dataset
+                                dataset1=pd.read_csv('odi_testdata.csv')
+                                X1=dataset1.iloc[:,[4,5]].values      
+                                Y1=dataset1.iloc[:,[7]].values
+                                Y_predict=regressor.predict(X1)    
+                                dataset1['Avg']=Y_predict
+                                
+                                dataset1.to_csv("result1.csv", columns=['Cap','Name','Avg'], index=False)
+                                
+                                dataset2=pd.read_csv('result1.csv')
+                                X3=dataset2.iloc[:,:].values
+                                
+                                
+                                df = pd.DataFrame(X3)
+                                result = df.sort_values(by=2,ascending=False)
+                                print(result.head(c))
+                           
+                            elif a==2:
+                                print('*******')
+                                print('BOWLERS')
+                                print('*******')
+                                
+                                X=dataset.iloc[:,[4,8,9]].values      
+                                Y=dataset.iloc[:,[11]].values
+                                
+                                #Splitting the dataset into training set and test set
+                                from sklearn.model_selection import train_test_split
+                                X_train, X_test, Y_train, Y_test = train_test_split(X,Y,test_size=1/3,random_state=0)
+                                
+                                
+                                #Fitting simple linear Regression to the training set
+                                from sklearn.linear_model import LinearRegression
+                                regressor = LinearRegression()
+                                regressor.fit(X_train,Y_train)
+                                
+                                #Importing the test dataset
+                                dataset1=pd.read_csv('odi_testdata.csv')
+                                X1=dataset1.iloc[:,[4,8,9]].values      
+                                Y1=dataset1.iloc[:,[11]].values
+                                Y_predict=regressor.predict(X1)    
+                                dataset1['Wkt']=Y_predict
+                                
+                                dataset1.to_csv("result2.csv", columns=['Cap','Name','Wkt'], index=False)
+                                
+                                dataset2=pd.read_csv('result2.csv')
+                                X3=dataset2.iloc[:,:].values
+                                
+                                df = pd.DataFrame(X3)
+                                result = df.sort_values(by=2,ascending=False)
+                                print(result.head(d))        
+                             
+                                
+                            elif a==3:
+                                print('*******')
+                                print('WICKETKEEPERS')
+                                print('*******')
+                                
+                                X=dataset.iloc[:,[9,12]].values      
+                                Y=dataset.iloc[:,[13]].values
+                                
+                                #splitting the dataset into training set and test set
+                                from sklearn.model_selection import train_test_split
+                                X_train, X_test, Y_train, Y_test = train_test_split(X,Y,test_size=1/3,random_state=0)
+                                
+                                
+                                #Fitting simple linear Regression to the training set
+                                from sklearn.linear_model import LinearRegression
+                                regressor = LinearRegression()
+                                regressor.fit(X_train,Y_train)
+                                
+                                #Importing the test dataset
+                                dataset1=pd.read_csv('odi_testdata.csv')
+                                X1=dataset1.iloc[:,[9,12]].values      
+                                Y1=dataset1.iloc[:,[13]].values
+                                Y_predict=regressor.predict(X1)    
+                                dataset1['St']=Y_predict
+                                
+                                dataset1.to_csv("result3.csv", columns=['Cap','Name','St'], index=False)
+                                
+                                dataset2=pd.read_csv('result3.csv')
+                                X3=dataset2.iloc[:,:].values
+                                
+                                
+                                df = pd.DataFrame(X3)
+                                result = df.sort_values(by=2,ascending=False)
+                                print(result.head(e))
+                                
+                else:
+                        print('THE SUM OF ALL PLAYERS SHOULD BE 11')
+                        
+                
+                
+
+            elif y==3:
+                print('TEST')
+                
+                print('=====================PLAYING 11 PREDICTION FOR TEST MATCH=====================')
+                print('ENGLAND TEST')
+                #Importing libraries
+                import numpy as np      
+                import pandas as pd
+                import matplotlib.pyplot as plt
+                
+                #Importing the dataset of test match
+                dataset=pd.read_csv('eng_test.csv')
+                
+                c=int(input('1.ENTER THE NUMBER OF BATSMEN : '))
+                d=int(input('2.ENTER THE NUMBER OF BOWLERS : '))
+                e=int(input('3.ENTER THE NUMBER OF WICKETKIPPERS : '))
+                
+                f=c+d+e
+                if f==11:
+                    for i in range(0,3):    
+                            a=int(input('Among the three, which do u want to select : '))
+                            if a==1:
+                                print('*******')
+                                print('BATSMEN')
+                                print('*******')
+                                
+                                X=dataset.iloc[:,[4,5]].values      
+                                Y=dataset.iloc[:,[7]].values
+                                
+                                #splitting the dataset into training set and test set
+                                from sklearn.model_selection import train_test_split
+                                X_train, X_test, Y_train, Y_test = train_test_split(X,Y,test_size=1/3,random_state=0)
+                                
+                                
+                                #Fitting simple linear Regression to the training set
+                                from sklearn.linear_model import LinearRegression
+                                regressor = LinearRegression()
+                                regressor.fit(X_train,Y_train)
+                                
+                                #Importing the test dataset
+                                dataset1=pd.read_csv('test_testdata.csv')
+                                X1=dataset1.iloc[:,[4,5]].values      
+                                Y1=dataset1.iloc[:,[7]].values
+                                Y_predict=regressor.predict(X1)    
+                                dataset1['Avg']=Y_predict
+                                
+                                dataset1.to_csv("result1.csv", columns=['Cap','Name','Avg'], index=False)
+                                
+                                dataset2=pd.read_csv('result1.csv')
+                                X3=dataset2.iloc[:,:].values
+                                
+                                
+                                df = pd.DataFrame(X3)
+                                result = df.sort_values(by=2,ascending=False)
+                                print(result.head(c))
+                           
+                            elif a==2:
+                                print('*******')
+                                print('BOWLERS')
+                                print('*******')
+                                
+                                X=dataset.iloc[:,[4,8,9]].values      
+                                Y=dataset.iloc[:,[11]].values
+                                
+                                #Splitting the dataset into training set and test set
+                                from sklearn.model_selection import train_test_split
+                                X_train, X_test, Y_train, Y_test = train_test_split(X,Y,test_size=1/3,random_state=0)
+                                
+                                
+                                #Fitting simple linear Regression to the training set
+                                from sklearn.linear_model import LinearRegression
+                                regressor = LinearRegression()
+                                regressor.fit(X_train,Y_train)
+                                
+                                #Importing the test dataset
+                                dataset1=pd.read_csv('test_testdata.csv')
+                                X1=dataset1.iloc[:,[4,8,9]].values      
+                                Y1=dataset1.iloc[:,[11]].values
+                                Y_predict=regressor.predict(X1)    
+                                dataset1['Wkt']=Y_predict
+                                
+                                dataset1.to_csv("result2.csv", columns=['Cap','Name','Wkt'], index=False)
+                                
+                                dataset2=pd.read_csv('result2.csv')
+                                X3=dataset2.iloc[:,:].values
+                                
+                                df = pd.DataFrame(X3)
+                                result = df.sort_values(by=2,ascending=False)
+                                print(result.head(d))        
+                             
+                                
+                            elif a==3:
+                                print('*******')
+                                print('WICKETKEEPERS')
+                                print('*******')
+                                
+                                X=dataset.iloc[:,[9,12]].values      
+                                Y=dataset.iloc[:,[13]].values
+                                
+                                #splitting the dataset into training set and test set
+                                from sklearn.model_selection import train_test_split
+                                X_train, X_test, Y_train, Y_test = train_test_split(X,Y,test_size=1/3,random_state=0)
+                                
+                                
+                                #Fitting simple linear Regression to the training set
+                                from sklearn.linear_model import LinearRegression
+                                regressor = LinearRegression()
+                                regressor.fit(X_train,Y_train)
+                                
+                                #Importing the test dataset
+                                dataset1=pd.read_csv('test_testdata.csv')
+                                X1=dataset1.iloc[:,[9,12]].values      
+                                Y1=dataset1.iloc[:,[13]].values
+                                Y_predict=regressor.predict(X1)    
+                                dataset1['St']=Y_predict
+                                
+                                dataset1.to_csv("result3.csv", columns=['Cap','Name','St'], index=False)
+                                
+                                dataset2=pd.read_csv('result3.csv')
+                                X3=dataset2.iloc[:,:].values
+                                
+                                
+                                df = pd.DataFrame(X3)
+                                result = df.sort_values(by=2,ascending=False)
+                                print(result.head(e))
+                            
+
+            elif y==4:
+                break
+                
+    elif x==4:
+        break
+ 
+                                        
+            </code>
+         </pre>
+        </div></td>
+        </tr>
+        </table>
+
+        <br>
+        <br>
+        <hr>
+<h2 style="font-family:times new roman ;text-align: center;"><b>DATASET USED</b></h2>
+<br>
+        <div  style="width: 50rem; margin-left:22% ;" class="card-group">
+            <div  class="card me-3">
+            <a href="https://github.com/rachit0905/CRICKET_PREDICTION">
+            <img src="img/dataset.png" class="card-img-top" alt="...">
+            </a>
+            <div style="text-align: center;" class="card-body">
+                <h5 class="card-title">CSV FILES</h5>
+            </div>
+            
+            </div>
+
+            
+           
+        </div>
+            
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+   </body>
+</html>

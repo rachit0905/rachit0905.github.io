@@ -8,11 +8,85 @@
 	<link rel="stylesheet" type="text/css" href="style/index.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+	
+
+
 </head>
 
+
 <body>
+	<nav  id="navbar" class="navbar navbar-expand-lg fixed-top navbarScroll">
+        <div class="container-fluid" style="width: 100%;">
+          <a class="navbar-brand" href="bio.html">
+            <img src="img/profilepic.jpeg" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> 
+          </a>
+          
+          <ul class="navbar-nav">
+            <a class="navbar-brand" href="https://www.linkedin.com/in/rachit-patel-666494167">
+                <img src="img/linkedin.png" alt="Avatar Logo" style="width:30px;" class="rounded-pill"> 
+              </a>
+            <li class="nav-item">
+                <a class="nav-link" style="font-size:20px;" href="https://www.linkedin.com/in/rachit-patel-666494167"><strong>LinkedIn</strong></a>
+            </li>
+            <a class="navbar-brand" href="https://auth.geeksforgeeks.org/user/rachitpatell98">
+                <img src="img/gfg.jpeg" alt="Avatar Logo" style="width:30px;" class="rounded-pill"> 
+              </a>
+            <li class="nav-item">
+                <a class="nav-link" style="font-size:20px;" href="https://auth.geeksforgeeks.org/user/rachitpatell98"><strong>GFG Profile</strong> </a>
+            </li>
+            <a class="navbar-brand" href="img/RachitPatel_ALLDOCS.pdf">
+              <img src="img/college.png" alt="Avatar Logo" style="width:30px;" class="rounded-pill"> 
+            </a>
+            <li class="nav-item">
+              <a class="nav-link" style="font-size:20px" href="/img/RachitPatel_ALLDOCS.pdf"><strong>Education</strong></a>
+            </li>
+            <a class="navbar-brand" href="https://www.linkedin.com/in/rachit-patel-666494167">
+              <img src="img/project.png" alt="Avatar Logo" style="width:30px;" class="rounded-pill"> 
+            </a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="projects" style="font-size:20px;" href="#" role="button" data-bs-toggle="dropdown"><strong>Projects</strong></a>
+                <ul class="dropdown-menu">
+                    <a class="nav-link dropdown-togglee"  style="font-size:15px;" href="mlprojects.html" role="button" data-bs-toggle="dropdown"><strong>DSA PROJECTS</strong></a>
+
+                  <li><a class="dropdown-item" href="index.html">Sorting Visualizer</a></li>
+                  <li><a class="dropdown-item" href="sudoko.html">Sudoku Solver</a></li>
+
+                  <a class="nav-link dropdown-togglee"  style="font-size:15px;" href="mlprojects.html" role="button" data-bs-toggle="dropdown"><strong>STORAGE BASED</strong></a>
+
+                  <li><a class="dropdown-item" href="decentral.html">Decentralized Storage</a></li>
+                  <li class="nav-item dropdown">                
+                   
+                    <a class="nav-link dropdown-togglee"  style="font-size:15px;" href="mlprojects.html" role="button" data-bs-toggle="dropdown"><strong>ML PROJECTS</strong></a>
+                    <ul class="dropdown-menuu">
+                        <li><a class="dropdown-item" href="mlprojects.html">Medical Bot</a></li>
+                        <li><a class="dropdown-item" href="ehr_blockchain.html">ACADEMIC</a></li>
+                                       
+                        </ul>      
+                
+                    </li>
+                </ul>
+            </li>
+              <a class="navbar-brand" href="img/Experience_Letter.pdf">
+                <img src="img/intership.png" alt="Avatar Logo" style="width:30px;" class="rounded-pill"> 
+              </a>
+            <li class="nav-item">
+              <a class="nav-link" style="font-size:20px;" href="img/Experience_Letter.pdf"><strong>Interships</strong></a>
+            </li>
+            <a class="navbar-brand" href="img/ResumeRACHIT_PATEL_1.pdf">
+                <img src="img/cv.png" alt="Avatar Logo" style="width:30px;" class="rounded-pill"> 
+              </a>
+            <li class="nav-item">
+                <a class="nav-link" style="font-size:20px;" href="img/ResumeRACHIT_PATEL_1.pdf"><strong>DownloadCV</strong></a>
+              </li>
+          </ul>
+        </div>
+    </nav>
+<br><br>
+<br>
+
+
 	<div class="header1">
-		<h1>LET'S LEARN SORTING</h1>
+		<h1>LET'S LEARN SEARCHING & SORTING</h1>
 	</div>	
 	<div class="Info">
 		<p class=>Sorting refers to ordering data in an increasing or decreasing manner according to some linear relationship among the data items. ordering: arranging items in a sequence ordered by some criterion; categorizing: grouping items with similar properties.</p>
@@ -20,30 +94,36 @@
 	<div class="header">
 		<div class="vars">
 			
-			<div class="sorts">
+			<div style="text-align: right;" class="btn-group">
                 <a href="index.html">              
-				<button type="button" class="btn btn-primary btn-lg me-2">Home</button>
+				<button type="button" class="btn btn-primary btn-lg me-2">HOME PAGE</button>
 				</a>
 				<a href="bio.html">              
-					<button type="button" class="btn btn-primary btn-lg me-2">Author</button>
+					<button type="button" class="btn btn-primary btn-lg me-2">About the Author</button>
 					</a>
                 <a href="selection.html">
-					<button type="button" class="btn btn-primary btn-lg me-2" onclick="SelectionSort()">SelectionSort</button>
+					<button type="button" class="btn btn-primary btn-lg me-2" onclick="SelectionSort()">Selection Sort</button>
 				</a>				
                 <a href="bubble.html">
-					<button type="button" class="btn btn-primary btn-lg me-2" onclick="BubbleSort()">BubbleSort</button>
+					<button type="button" class="btn btn-primary btn-lg me-2" onclick="BubbleSort()">Bubble Sort</button>
 				</a>				
                 <a href="insertion.html">
-					<button type="button" class="btn btn-primary btn-lg me-2" onclick="InsertionSort()">InsertionSort</button>
+					<button type="button" class="btn btn-primary btn-lg me-2" onclick="InsertionSort()">Insertion Sort</button>
 				</a>
                 <a href="merge.html">
-					<button type="button" class="btn btn-primary btn-lg me-2" onclick="MergeSort()">MergeSort</button>
+					<button type="button" class="btn btn-primary btn-lg me-2" onclick="MergeSort()">Merge Sort</button>
 				</a>
                 <a href="quick.html">
-					<button type="button" class="btn btn-primary btn-lg me-2" onclick="QuickSort()">QuickSort</button>
+					<button type="button" class="btn btn-primary btn-lg me-2" onclick="QuickSort()">Quick Sort</button>
 				</a>
 				<a href="heap.html">
-					<button type="button" class="btn btn-primary btn-lg " onclick="HeapSort()">HeapSort</button>
+					<button type="button" class="btn btn-primary btn-lg me-2 " onclick="HeapSort()">Heap Sort</button>
+				</a>
+				<a href="linearsearch.html">
+					<button type="button" class="btn btn-primary btn-lg me-2" >Linear Search</button>
+				</a>
+				<a href="binarysearch.html">
+					<button type="button" class="btn btn-primary btn-lg ">Binary Search</button>
 				</a>
 				<br><br>
 			</div>
@@ -55,10 +135,12 @@
 	
 	<br>
 	<br>
+	<h2 style="font-family:times new roman ;text-align: center;"><b><u>SORTING ALGORITHMS</u></b></h2>
+<br><br>
 	<div class="card-group">
         <div class="card me-3">
 		<a href="selection.html">
-        <img src="img/image.png" class="card-img-top" alt="...">
+        <img src="img/sortingalgo.jpeg" class="card-img-top" alt="...">
 		</a>
 		<div class="card-body">
             <h5 class="card-title">Selection Sort</h5>
@@ -68,7 +150,7 @@
         </div>
         <div class="card me-3">
 		<a href="bubble.html">
-        <img src="img/image.png"  class="card-img-top" alt="...">
+        <img src="img/sortingalgo.jpeg"  class="card-img-top" alt="...">
         </a>
 		<div class="card-body">
             <h5 class="card-title">Bubble Sort</h5>
@@ -78,7 +160,7 @@
         </div>
         <div class="card">
 		<a href="insertion.html">
-        <img src="img/image.png" class="card-img-top" alt="...">
+        <img src="img/sortingalgo.jpeg" class="card-img-top" alt="...">
         </a>
 		<div class="card-body">
             <h5 class="card-title">Insertion Sort</h5>
@@ -93,7 +175,7 @@
 	<div class="card-group">
         <div class="card me-3">
 		<a href="merge.html">
-        <img src="img/image.png" class="card-img-top" alt="...">
+        <img src="img/sortingalgo.jpeg" class="card-img-top" alt="...">
         </a>
 		<div class="card-body">
             <h5 class="card-title">Merge Sort</h5>
@@ -103,7 +185,7 @@
         </div>
         <div class="card me-3">
 		<a href="quick.html">
-        <img src="img/image.png"  class="card-img-top" alt="...">
+        <img src="img/sortingalgo.jpeg"  class="card-img-top" alt="...">
         </a>
 		<div class="card-body">
             <h5 class="card-title">Quick Sort</h5>
@@ -113,18 +195,57 @@
         </div>
         <div class="card">
 		<a href="heap.html">
-        <img src="img/image.png" class="card-img-top" alt="...">
+        <img src="img/sortingalgo.jpeg" class="card-img-top" alt="...">
 		</a>
         <div class="card-body">
             <h5 class="card-title">Heap Sort</h5>
             <p class="card-text"></p>
         </div>
 	
-        </div>
+	</div>
 		
     </div>
+
+	<br>
+	<br>
+	<h2 style="font-family:times new roman ;text-align: center;"><b><u>SEARCHING ALGORITHMS</u></b></h2>
+<br><br>
+
+	<div class="card-group">
+	<div class="card">
+		<a href="linearsearch.html">
+		<img src="img/searching.jpeg" class="card-img-top" alt="...">
+		</a>
+		<div class="card-body">
+			<h5 class="card-title">Linear Search</h5>
+			<p class="card-text"></p>
+		</div>
+	
+		</div>
+
+	<div class="card">
+			<a href="binarysearch.html">
+			<img src="img/searching.jpeg" class="card-img-top" alt="...">
+			</a>
+			<div class="card-body">
+				<h5 class="card-title">Binary Search</h5>
+				<p class="card-text"></p>
+			</div>
+		
+	</div>
+</div>
+
+
+
+
+
+
 	<script src="App/beep.js"></script>
 	<script src="App/script.js"></script>
+<br><br>	
+<footer>
+	<p>Author: RACHIT PATEL<br>
+	<a href="mailto:hege@example.com">rachitpatell.98@gmail.com</a></p>
+  </footer>
 </body>
-
 </html>

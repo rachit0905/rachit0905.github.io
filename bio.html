@@ -345,6 +345,18 @@ hr {
   }
 }
 
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10vh;
+    background: #000046;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
     </style>
 
 
@@ -376,26 +388,43 @@ hr {
               <img src="img/college.png" alt="Avatar Logo" style="width:30px;" class="rounded-pill"> 
             </a>
             <li class="nav-item">
-              <a class="nav-link" style="font-size:20px;" href="#"><strong>Education</strong></a>
+              <a class="nav-link" style="font-size:20px;" href="img/RachitPatel_ALLDOCS.pdf"><strong>Education</strong></a>
             </li>
             <a class="navbar-brand" href="https://www.linkedin.com/in/rachit-patel-666494167">
               <img src="img/project.png" alt="Avatar Logo" style="width:30px;" class="rounded-pill"> 
             </a>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle"  style="font-size:20px;" href="#" role="button" data-bs-toggle="dropdown"><strong>Projects</strong></a>
+                <a class="nav-link dropdown-toggle" id="projects" style="font-size:20px;" href="#" role="button" data-bs-toggle="dropdown"><strong>Projects</strong></a>
                 <ul class="dropdown-menu">
+                    <a class="nav-link dropdown-togglee"  style="font-size:15px;" href="mlprojects.html" role="button" data-bs-toggle="dropdown"><strong>DSA PROJECTS</strong></a>
+
                   <li><a class="dropdown-item" href="index.html">Sorting Visualizer</a></li>
-                  <li><a class="dropdown-item" href="#">Decentralized Storage</a></li>
-                  <li><a class="dropdown-item" href="#">A third link</a></li>
+                  <li><a class="dropdown-item" href="sudoko.html">Sudoku Solver</a></li>
+
+                  <a class="nav-link dropdown-togglee"  style="font-size:15px;" href="mlprojects.html" role="button" data-bs-toggle="dropdown"><strong>STORAGE BASED</strong></a>
+
+                  <li><a class="dropdown-item" href="decentral.html">Decentralized Storage</a></li>
+                  <li class="nav-item dropdown">                
+                   
+                    <a class="nav-link dropdown-togglee"  style="font-size:15px;" href="mlprojects.html" role="button" data-bs-toggle="dropdown"><strong>ML PROJECTS</strong></a>
+                    <ul class="dropdown-menuu">
+                        <li><a class="dropdown-item" href="mlprojects.html">Medical Bot</a></li>
+                        <li><a class="dropdown-item" href="/Chatbot/index.html">CHAT BOT</a></li>
+
+                        <li><a class="dropdown-item" href="ehr_blockchain.html">ACADEMIC</a></li>
+                                       
+                        </ul>      
+                
+                    </li>
                 </ul>
-              </li>
-              <a class="navbar-brand" href="https://www.linkedin.com/in/rachit-patel-666494167">
+            </li>
+              <a class="navbar-brand" href="img/Experience_Letter.pdf">
                 <img src="img/intership.png" alt="Avatar Logo" style="width:30px;" class="rounded-pill"> 
               </a>
             <li class="nav-item">
-              <a class="nav-link" style="font-size:20px;" href="#"><strong>Interships</strong></a>
+              <a class="nav-link" style="font-size:20px;" href="img/Experience_Letter.pdf"><strong>Interships</strong></a>
             </li>
-            <a class="navbar-brand" href="https://www.linkedin.com/in/rachit-patel-666494167">
+            <a class="navbar-brand" href="img/ResumeRACHIT_PATEL_1.pdf">
                 <img src="img/cv.png" alt="Avatar Logo" style="width:30px;" class="rounded-pill"> 
               </a>
             <li class="nav-item">
@@ -444,8 +473,8 @@ hr {
     <!-- about section-->
     <section id="about">
       <div class="container mt-4 pt-4">
-          <h1 class="text-center">ABOUT ME</h1>
-          <div class="row mt-4">
+        <h2 style="font-family:times new roman ;margin-left: 50%;"><b><u>ABOUT ME</u></b></h2>
+        <div class="row mt-4">
               <div class="col-lg-4">
                   <img src="img/profilepic.jpeg" style="max-width:100%;height:auto;" class= "imageAboutPage" alt="">
               </div>
@@ -490,14 +519,14 @@ hr {
   <hr>
   <br>
  
-  <h2 style="text-align: justify; margin-left: 10%;font-family: 'Times New Roman', Times, serif;""><strong>TIMELINE-ACADEMIC</strong></h2>
+  <h2 style="font-family:times new roman ;margin-left: 40%;"><b><u>TIMELINE ACADEMIC</u></b></h2>
   <section style="background-color: #F0F2F5;">
     <div class="container py-5">
       <div class="main-timeline">
         <div class="timeline left">
           <div class="card">
             <div class="card-body p-4">
-              <h3>2022-2024 - MTECH (SWE)</h3>
+              <h3><a href="/img/Mtech.pdf">2022-2024 - MTECH (SWE)</a></h3>
               <p class="mb-0">Throughout my academic journey, I have demonstrated a relentless pursuit of excellence. In my Master of Technology (M.Tech) program in Software Engineering at Delhi Technological University, I have consistently achieved outstanding results, maintaining an impressive CGPA of 9.65 during my first year. This rigorous academic training has equipped me with a strong technical foundation and a deep understanding of software development principles.                
               </p>
             </div>
@@ -506,7 +535,7 @@ hr {
         <div class="timeline right">
           <div class="card">
             <div class="card-body p-4">
-              <h3>Oct,2020- June,2021 - INTERSHIP</h3>
+              <h3><a href="/img/Experience_Letter.pdf">Oct,2020- June,2021 - INTERSHIP</a></h3>
               <p class="mb-0">As a Data Science and Python Developer Intern at Sarvvid AI, New Delhi, I had the opportunity to work on challenging projects that allowed me to apply my skills in a practical setting. I contributed to the development of a decentralized data storage solution, leveraging Python to ensure efficient data management within the organization. Additionally, I actively participated in a project that focused on improving data compression rates using machine learning and data science techniques.
               </p>
             </div>
@@ -515,7 +544,7 @@ hr {
         <div class="timeline left">
           <div class="card">
             <div class="card-body p-4">
-              <h3>2016-2020 - BTECH (CSE)</h3>
+              <h3><a href="/img/Btech_AllResults_RachitPatel.pdf">2016-2020 - BTECH (CSE)</a></h3>
               <p class="mb-0">During my Bachelor of Technology in Computer Science and Engineering at Guru Gobind Singh Indraprastha University, I honed my programming skills and gained practical experience in various domains of computer science. With a notable CGPA of 8.89, I demonstrated my dedication and commitment to academic excellence.</p>
             </div>
           </div>
@@ -523,7 +552,7 @@ hr {
         <div class="timeline right">
           <div class="card">
             <div class="card-body p-4">
-              <h3>2016 - XII </h3>
+              <h3><a href="/img/12th_Rachitpatel.pdf">2016 - XII </a></h3>
               <p class="mb-0">Passed XIIth,CBSE Universal Public School Score - 89.9% </p>
             </div>
           </div>
@@ -531,7 +560,7 @@ hr {
         <div class="timeline left">
           <div class="card">
             <div class="card-body p-4">
-              <h3>2014</h3>
+              <h3><a href="/img/10th_RachitPatel.pdf">2014 - X </a></h3>
               <p class="mb-0">Pass Xth,CBSE Universal Public School Score- 9.6 CGPA</p>
             </div>
           </div>
@@ -546,8 +575,9 @@ hr {
   <hr>
   <br>
 
-
-    <div class="card-group">
+  <h2 style="font-family:times new roman ;margin-left: 40%;"><b><u>DOCUMENTS</u> </b></h2>
+  <br>
+  <div  style="width: 50rem; margin-left: 22%;" class="card-group">
         <div class="card me-3">
         <a href="/img/RachitPatel_ALLDOCS.pdf">
         <img src="img/college.png" class="card-img-top" alt="...">
@@ -558,7 +588,9 @@ hr {
         
         </div>
         <div class="card me-3">
+        <a href="#projects">
         <img src="img/project.png"  class="card-img-top" alt="...">
+        </a>
         <div style="text-align: center;" class="card-body">
             <h5 class="card-title">PROJECTS</h5>
    <!--   <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p> -->
@@ -566,7 +598,9 @@ hr {
         
         </div>
         <div class="card">
+        <a href="/img/Experience_Letter.pdf">
         <img src="img/intership.png" class="card-img-top" alt="...">
+        </a>
         <div style="text-align: center;" class="card-body">
             <h5 class="card-title">INTERNSHIPS</h5>
         </div>
@@ -578,7 +612,7 @@ hr {
     <hr>
     <br>
     
-    <h2 style="text-align: justify; margin-left: 10%;font-family: 'Times New Roman', Times, serif;""><strong>SKILLS</strong></h2>
+    <h2 style="font-family:times new roman ;margin-left: 45%;"><strong><b><u>SKILLS</u></strong></b></h2>
 
 
     <section style="background-color: #F0F2F5;">
@@ -587,7 +621,7 @@ hr {
             <div class="stimeline sleft">
               <div class="card">
                 <div class="card-body p-4">
-                  <h3>TECHNICAL SKILLS</h3>
+                  <h3 >TECHNICAL SKILLS</h3>
                   <p class="mb-0"><ul>
                     <li>- Proficient in programming languages: C++, Python</li>
                     <li>- Familiarity with web development technologies: HTML, CSS, JavaScript</li>
@@ -759,4 +793,11 @@ hr {
 
 
 </body>
+
+<footer>
+  <p>
+     Made with &#10084;&#65039; by RACHIT PATEL &nbsp; 
+     
+ </p>
+</footer>
 </html>

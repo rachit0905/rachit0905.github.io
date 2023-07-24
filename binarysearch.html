@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Search</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+	
+<style>
+ footer {
+	text-align: center;
+	padding: 3px;
+	background-color: DarkSalmon;
+	color: white;
+  }
+    * {
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+
+.header {
+font-size: 35px;
+text-align: center;
+}
+
+#array {
+background-color: white;
+height: 305px;
+width: 598px;
+margin: auto;
+position: relative;
+margin-top: 64px;
+}
+
+.block {
+width: 28px;
+background-color: #6b5b95;
+position: absolute;
+bottom: 0px;
+transition: 0.2s all ease;
+}
+
+.block_id {
+position: absolute;
+color: black;
+margin-top: -20px;
+width: 100%;
+text-align: center;
+}
+
+</style>
+
+</head>
+
+<body>
+        <nav  id="navbar" class="navbar navbar-expand-lg fixed-top navbarScroll">
+            <div class="container-fluid" style="width: 100%;">
+              <a class="navbar-brand" href="bio.html">
+                <img src="img/profilepic.jpeg" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> 
+              </a>
+              
+              <ul class="navbar-nav">
+                <a class="navbar-brand" href="https://www.linkedin.com/in/rachit-patel-666494167">
+                    <img src="img/linkedin.png" alt="Avatar Logo" style="width:30px;" class="rounded-pill"> 
+                  </a>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-size:20px;" href="https://www.linkedin.com/in/rachit-patel-666494167"><strong>LinkedIn</strong></a>
+                </li>
+                <a class="navbar-brand" href="https://auth.geeksforgeeks.org/user/rachitpatell98">
+                    <img src="img/gfg.jpeg" alt="Avatar Logo" style="width:30px;" class="rounded-pill"> 
+                  </a>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-size:20px;" href="https://auth.geeksforgeeks.org/user/rachitpatell98"><strong>GFG Profile</strong> </a>
+                </li>
+                <a class="navbar-brand" href="img/RachitPatel_ALLDOCS.pdf">
+                  <img src="img/college.png" alt="Avatar Logo" style="width:30px;" class="rounded-pill"> 
+                </a>
+                <li class="nav-item">
+                  <a class="nav-link" style="font-size:20px" href="/img/RachitPatel_ALLDOCS.pdf"><strong>Education</strong></a>
+                </li>
+                <a class="navbar-brand" href="https://www.linkedin.com/in/rachit-patel-666494167">
+                  <img src="img/project.png" alt="Avatar Logo" style="width:30px;" class="rounded-pill"> 
+                </a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="projects" style="font-size:20px;" href="#" role="button" data-bs-toggle="dropdown"><strong>Projects</strong></a>
+                    <ul class="dropdown-menu">
+                        <a class="nav-link dropdown-togglee"  style="font-size:15px;" href="mlprojects.html" role="button" data-bs-toggle="dropdown"><strong>DSA PROJECTS</strong></a>
+    
+                      <li><a class="dropdown-item" href="index.html">Sorting Visualizer</a></li>
+                      <li><a class="dropdown-item" href="sudoko.html">Sudoku Solver</a></li>
+    
+                      <a class="nav-link dropdown-togglee"  style="font-size:15px;" href="mlprojects.html" role="button" data-bs-toggle="dropdown"><strong>STORAGE BASED</strong></a>
+    
+                      <li><a class="dropdown-item" href="decentral.html">Decentralized Storage</a></li>
+                      <li class="nav-item dropdown">                
+                       
+                        <a class="nav-link dropdown-togglee"  style="font-size:15px;" href="mlprojects.html" role="button" data-bs-toggle="dropdown"><strong>ML PROJECTS</strong></a>
+                        <ul class="dropdown-menuu">
+                            <li><a class="dropdown-item" href="mlprojects.html">Medical Bot</a></li>
+                            <li><a class="dropdown-item" href="ehr_blockchain.html">ACADEMIC</a></li>
+                                           
+                            </ul>      
+                    
+                        </li>
+                    </ul>
+                </li>
+                  <a class="navbar-brand" href="img/Experience_Letter.pdf">
+                    <img src="img/intership.png" alt="Avatar Logo" style="width:30px;" class="rounded-pill"> 
+                  </a>
+                <li class="nav-item">
+                  <a class="nav-link" style="font-size:20px;" href="img/Experience_Letter.pdf"><strong>Interships</strong></a>
+                </li>
+                <a class="navbar-brand" href="img/ResumeRACHIT_PATEL_1.pdf">
+                    <img src="img/cv.png" alt="Avatar Logo" style="width:30px;" class="rounded-pill"> 
+                  </a>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-size:20px;" href="img/ResumeRACHIT_PATEL_1.pdf"><strong>DownloadCV</strong></a>
+                  </li>
+              </ul>
+            </div>
+        </nav>
+    <br><br>
+    <br>
+    
+    
+       
+        <div class="header">
+            <div class="vars">
+                
+                <div style="text-align: right;" class="btn-group">
+                    <a href="index.html">              
+                    <button type="button" class="btn btn-primary btn-lg me-2">Home   </button>
+                    </a>
+                    <a href="bio.html">              
+                        <button type="button" class="btn btn-primary btn-lg me-2">Author</button>
+                        </a>
+                    <a href="selection.html">
+                        <button type="button" class="btn btn-primary btn-lg me-2" onclick="SelectionSort()">Selection Sort</button>
+                    </a>				
+                    <a href="bubble.html">
+                        <button type="button" class="btn btn-primary btn-lg me-2" onclick="BubbleSort()">Bubble Sort</button>
+                    </a>				
+                    <a href="insertion.html">
+                        <button type="button" class="btn btn-primary btn-lg me-2" onclick="InsertionSort()">Insertion Sort</button>
+                    </a>
+                    <a href="merge.html">
+                        <button type="button" class="btn btn-primary btn-lg me-2" onclick="MergeSort()">Merge Sort</button>
+                    </a>
+                    <a href="quick.html">
+                        <button type="button" class="btn btn-primary btn-lg me-2" onclick="QuickSort()">Quick Sort</button>
+                    </a>
+                    <a href="heap.html">
+                        <button type="button" class="btn btn-primary btn-lg me-2 " onclick="HeapSort()">Heap Sort</button>
+                    </a>
+                    <a href="linearsearch.html">
+                        <button type="button" class="btn btn-primary btn-lg me-2" >Linear Search</button>
+                    </a>
+                    <a href="binarysearch.html">
+                        <button type="button" class="btn btn-primary btn-lg ">Binary Search</button>
+                    </a>
+                    <br><br>
+                </div>
+                
+                
+            </div>
+        </div>
+        
+        
+        <br>
+        <br>
+
+	<br />
+	<p class="header">Binary Search</p>
+
+
+
+
+	<div id="array"></div>
+	<br /><br />
+
+	<div style="text-align: center">
+	<label for="fname">
+		Number to be Searched:
+	</label>
+	<input type="text" id="fname"
+			name="fname" />
+	<br /><br />
+	<button id="btn"
+			onclick="BinarySearch()">Search</button>
+	<br />
+	<br />
+	<div id="text"></div>
+	</div>
+
+	<script src="/App/binarysearch.js"></script>
+
+
+
+    <br><br>	
+    <footer>
+        <p>Author: RACHIT PATEL<br>
+        <a href="mailto:hege@example.com">rachitpatell.98@gmail.com</a></p>
+      </footer>
+</body>
+</html>

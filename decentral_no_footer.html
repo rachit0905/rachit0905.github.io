@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Decentralized</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <style>
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 100px;
+  grid-auto-rows: minmax(100px, auto);
+  margin-left: 10%;
+}
+
+
+
+
+hr {
+  border: 0;
+  margin-left: 2%;
+  margin-right: 2%;
+  border-top: 4px solid brown;
+  border-radius: 5px;
+}
+.carouselslide{
+    margin-left: 10%;
+    width: 70%;
+    height: auto;
+    
+}
+ /* hero background image */
+.bgimage {
+    height:100vh;
+    background: url('img/Decentralized.jpeg');
+    background-size:cover;
+    position:relative;
+}
+/* text css above hero image*/
+.hero_title {
+    font-size: 4.5rem;
+}
+
+/* about section image css */
+.imageAboutPage {
+    width: 100%;
+}
+
+.hero_desc {
+    font-size: 2rem;
+}
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+      </style>
+   </head>
+   <body>
+
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbarScroll">
+        <div class="container-fluid" >
+          <a class="navbar-brand" href="bio.html">
+            <img src="img/profilepic.jpeg" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> 
+          </a>
+          
+          <ul class="navbar-nav">
+            <a class="navbar-brand" href="https://www.linkedin.com/in/rachit-patel-666494167">
+                <img src="img/linkedin.png" alt="Avatar Logo" style="width:30px;" class="rounded-pill"> 
+              </a>
+            <li class="nav-item">
+                <a class="nav-link" style="font-size:20px;color: white;" href="https://www.linkedin.com/in/rachit-patel-666494167"><strong>LinkedIn</strong></a>
+            </li>
+            <a class="navbar-brand" href="https://auth.geeksforgeeks.org/user/rachitpatell98">
+                <img src="img/gfg.jpeg" alt="Avatar Logo" style="width:30px;" class="rounded-pill"> 
+              </a>
+            <li class="nav-item">
+                <a class="nav-link" style="font-size:20px;color: white;" href="https://auth.geeksforgeeks.org/user/rachitpatell98"><strong>GFG Profile</strong> </a>
+            </li>
+            <a class="navbar-brand" href="img/RachitPatel_ALLDOCS.pdf">
+              <img src="img/college.png" alt="Avatar Logo" style="width:30px;" class="rounded-pill"> 
+            </a>
+            <li class="nav-item">
+              <a class="nav-link" style="font-size:20px;color: white;" href="/img/RachitPatel_ALLDOCS.pdf"><strong>Education</strong></a>
+            </li>
+            <a class="navbar-brand" href="https://www.linkedin.com/in/rachit-patel-666494167">
+              <img src="img/project.png" alt="Avatar Logo" style="width:30px;" class="rounded-pill"> 
+            </a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"  style="font-size:20px;color: white;" href="#" role="button" data-bs-toggle="dropdown"><strong>Projects</strong></a>
+                <ul class="dropdown-menu">
+                    <a class="nav-link dropdown-togglee"  style="font-size:15px;" href="mlprojects.html" role="button" data-bs-toggle="dropdown"><strong>DSA PROJECTS</strong></a>
+
+                  <li><a class="dropdown-item" href="index.html">Sorting Visualizer</a></li>
+                  <li><a class="dropdown-item" href="sudoko.html">Sudoku Solver</a></li>
+
+                  <a class="nav-link dropdown-togglee"  style="font-size:15px;" href="mlprojects.html" role="button" data-bs-toggle="dropdown"><strong>STORAGE BASED</strong></a>
+
+                  <li><a class="dropdown-item" href="decentral.html">Decentralized Storage</a></li>
+                  <li class="nav-item dropdown">                
+                   
+                    <a class="nav-link dropdown-togglee"  style="font-size:15px;" href="mlprojects.html" role="button" data-bs-toggle="dropdown"><strong>ML PROJECTS</strong></a>
+                    <ul class="dropdown-menuu">
+                        <li><a class="dropdown-item" href="mlprojects.html">Medical Bot</a></li>
+                        <li><a class="dropdown-item" href="ehr_blockchain.html">ACADEMIC</a></li>
+                                       
+                        </ul>      
+                
+                    </li>
+                </ul>
+            </li>
+              <a class="navbar-brand" href="/img/Experience_Letter.pdf">
+                <img src="img/intership.png" alt="Avatar Logo" style="width:30px;" class="rounded-pill"> 
+              </a>
+            <li class="nav-item">
+              <a class="nav-link" style="font-size:20px;color: white;" href="img/Experience_Letter.pdf"><strong>Interships</strong></a>
+            </li>
+            <a class="navbar-brand" href="img/ResumeRACHIT_PATEL_1.pdf">
+                <img src="img/cv1.jpeg" alt="Avatar Logo" style="width:30px;border: white;" class="rounded-pill"> 
+              </a>
+            <li class="nav-item">
+                <a class="nav-link" style="font-size:20px;color: white;" href="img/ResumeRACHIT_PATEL_1.pdf"><strong>DownloadCV</strong></a>
+              </li>
+          </ul>
+        </div>
+    </nav>
+
+
+           <!-- main banner -->
+      <section class="bgimage" id="home">
+        
+         
+  </section>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<div class ="container">
+<figure class="text-justify">
+    <blockquote class="blockquote">
+      <p style="text-align:justify;"><i><strong>ABOUT THE PROJECT</strong> -The project I worked on aimed to address the need for decentralized data storage for clients. It involved developing a Python-based desktop application software designed to operate within the organization's private network. The objective was to create a robust solution that would enable efficient and secure data storage in a decentralized manner. By leveraging the power of Python, the application offered a reliable and user-friendly interface for managing and accessing data within the organization's network infrastructure. This project served as a significant step towards enhancing data storage practices while prioritizing privacy and security.</i></p>
+    </blockquote>
+    
+  </figure>  
+</div>  
+<br>
+<hr>
+<br>
+<br>
+<h2 style="font-family:times new roman ;text-align: center;"><b><u>PROJECT MOTIVATION AND IDEA</u></b></h2>
+<br>
+<div class ="container">
+    <figure class="text-justify">
+        <blockquote class="blockquote">
+          <p style="text-align:justify;"> -The motivation for undertaking this project stems from the remarkable decentralized storage networks <a href="https://ipfs.tech/">IPFS</a> (InterPlanetary File System) and BitTorrent. These influential networks served as a catalyst, inspiring the pursuit of creating a fully functional replica capable of providing secure and safe decentralized storage to participating users within the confines of private networks within organizations. With an unwavering dedication to safeguarding the integrity and confidentiality of valuable data, this project was meticulously developed, ensuring that it adhered to stringent security standards while delivering a seamless and reliable storage solution.</p>
+        </blockquote>
+        
+      </figure>  
+    </div>
+
+
+
+<hr>
+<br>
+<br>
+<h2 style="font-family:times new roman ;text-align: center;"><b><u>COMPATABLE OPERATING SYSTEMS</u></b></h2>
+<br>
+  <div  style="width: 40rem; margin-left:28% ;" class="card-group">
+    <div  class="card me-3">
+    <a href="/img/IntranetWindows.pdf">
+    <img src="img/windows.png" class="card-img-top" alt="...">
+    </a>
+    <div style="text-align: center;" class="card-body">
+        <h5 class="card-title">WINDOWS</h5>
+    </div>
+    
+    </div>
+    <div class="card me-3">
+    <a href="img/IntranetLINUX.pdf">
+    <img src="img/mac.jpeg"  class="card-img-top" alt="...">
+    </a>
+    <div style="text-align: center;" class="card-body">
+        <h5 class="card-title">MAC OS</h5>
+<!--   <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p> -->
+    </div>
+    
+    </div>
+    <div class="card">
+    <a href="/img/IntranetLINUX.pdf">
+    <img src="img/linux.png" class="card-img-top" alt="...">
+    </a>
+    <div style="text-align: center;" class="card-body">
+        <h5 class="card-title">LINUX</h5>
+    </div>
+    
+    </div>
+</div>
+
+<br>
+<br>
+<hr>
+<!--
+<div class="row">
+    <div class="col-4">
+      <div id="list" class="list-group">
+        <a class="list-group-item list-group-item-action" href="#window">WINDOW OS</a>
+        <a class="list-group-item list-group-item-action" href="#mac">MAC OS</a>
+        <a class="list-group-item list-group-item-action" href="#linux">LINUS OS</a>
+      </div>
+    </div>
+    <div class="col-8">
+      <div data-bs-spy="scroll" data-bs-target="#list" data-bs-smooth-scroll="true" class="scrollspy" tabindex="0">
+        <h4 id="window">WINDOWS OS</h4>
+        <p>...</p>
+        <h4 id="mac">MAC OS</h4>
+        <p>...</p>
+        <h4 id="linux">LINUS OS</h4>
+        <p>...</p>
+        
+      </div>
+    </div>
+  </div>
+  <hr>
+  -->
+<br>
+<br>
+<h2 style="font-family:times new roman ;text-align: center;"><b><u>PROJECT FEATURES</u></b></h2>
+<div style="text-align:justify;" class="container">
+    <p >
+        <h4>Uploading the Files</h4>
+        
+        <p>-User will select the file of any format that he wishes to upload using our system and the following processes will take place for the uploaded file </p>
+        <p> -Files uploaded using the Software will be :</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;step-1 &nbsp;&nbsp;-Encrypted using a Unique Encrption Key</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;step-2 &nbsp;&nbsp;-Sharding of the file into pieces called WADS</p> 
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;step-3 &nbsp;&nbsp;-Compression would be taking place on these WADS</p>
+        <p>-After all the above processes are completed these WADS are sent to the other systems in the same internal network for providing the Decentralized storage.</p>
+        <br>
+    </p>
+    <p >
+        <br>
+        <h4>Retrieving the files</h4>
+        <p>-For retrieving back the files user simply enter the file name which he/she needs to download and after entering the name the WADS for the corresponding file would be retrieved back to the system and after that following processes would take place</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;step-1 &nbsp;&nbsp;- Decompression of the WADS</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;step-2 &nbsp;&nbsp;- Reverse Sharding of the WADS to form a file.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;step-3 &nbsp;&nbsp;- Decryption after entering the authorized encryption key</p>
+        <p>- After completion of the above processes the files would be retrieved back.</p>
+    </p>
+</div>
+<br>
+
+<br>
+<hr><br><br>
+<div style="text-align:justify;" class="container">
+    <p>
+        <h2 style="font-family:times new roman ;text-align: center;"><b><u>MAJOR FEATURES</u></b></h2><br>
+        <p>1 - If the Decentralized file Storage System is initiated for the first time the main root user for the software will enter a root username and password that will be entered by the root user at the time of managing the system by the ROOT user Only.</p>
+        <p>2 - Multiple Users can be created with different Username and Password.</p>
+        <p>3 - These so created Users can Upload and Retrieve there files Decentralizely over the common internal network.</p>
+        <p>4 - One user can not retrieve the files of the other users without knowing there authorised Username and Password, hence the users are restricted from seeing the contents of other users without proper authorization.</p>
+        <p>     </p>
+        <p>5 - Only the Root User has the capability to see the number of users so created in the System and can also see the file so uploaded by those users.</p>
+        <p>6 - The main ROOT user who has the main authorization for the Software over the network can completely manage the users by adding new users and also by deleting the existing ones.</p>
+        <p>7 - The Root User can download the files of any user in the system after entering the root name and password that was created when the system started the first time.</p>
+        <p>8 - If the system shuts down due to any reason and the system closes, simply restart the software system , all the data and contents will be intact .</p>
+        <p>9 - Users can also connect the desired systems to the network where they want there wads to resite , this process is also taken care off as a feature of adding the IP of the desired system is provided in the user interface it .</p>
+        <p>10 - In Order to chnage the list of systems simply restart the software and add the new desired system’s IP address.</p>
+        <p>11 - If any error occurs simply restart the software and do the processes again.</p>
+        <p>12 - If any User forgots his password then the password could be update using the root system and root user can update his password after entering the correct root credentials.</p>
+        <p>13 - By using this software the users can use there unused space in other systems in other to store the files and data and also these files and data so stored would be more securely and also would reside in the organization itself.</p>
+        <p>14 - For using this product the oragnization only need a Internal Network so that the systems can communicate with each other and the system also do not require any kind Internet connection hence the data won’t go out from the organization hence increase in the security is there.</p>
+
+    </p>
+</div>
+<hr>
+<br>
+<h2 style="font-family:times new roman ;text-align: center;"><b><u>IMAGES-DECENT INTRANET</u></b></h2><br><br>
+
+
+<div class="wrapper">
+    <div class="one">    <img src="/img/intranet/1.png" alt=""></div>
+    <div class="two">    <img src="/img/intranet/2.png" alt=""></div>
+    <div class="three">  <img src="/img/intranet/3.png" alt=""></div>
+    <div class="four">   <img src="/img/intranet/4.png" alt=""></div>
+    <div class="five">   <img src="/img/intranet/5.png" alt=""> </div>
+    <div class="six">    <img src="/img/intranet/7.png" alt=""></div>
+    <div class="seven">  <img src="/img/intranet/8.png" alt=""></div>
+    <div class="eight">  <img src="/img/intranet/9.png" alt=""> </div>
+    <div class="nine">   <img src="/img/intranet/10.png" alt=""></div>
+    <div class="one">    <img src="/img/intranet/11.png" alt=""></div>
+    <div class="two">    <img src="/img/intranet/12.png" alt=""></div>
+    <div class="three">  <img src="/img/intranet/13.png" alt=""></div>
+    <div class="four">   <img src="/img/intranet/14.png" alt=""></div>
+    <div class="five">   <img src="/img/intranet/15.png" alt=""> </div>
+    <div class="six">    <img src="/img/intranet/16.png" alt=""></div>
+    <div class="seven">  <img src="/img/intranet/17.png" alt=""></div>
+    <div class="eight">  <img src="/img/intranet/18.png" alt=""> </div>
+</div>
+
+
+
+<hr>
+<br>
+<h2 style="font-family:times new roman ;text-align: center;"><b><u>FUTURE DIRECTION FOR THE PROJECT</u></b></h2>
+<br>
+<div class ="container">
+    <figure class="text-justify">
+        <blockquote class="blockquote">
+          <p style="text-align:justify;">&#9642; In future iterations of the project, there are several areas that could be further enhanced and optimized. Firstly, additional features could be incorporated to broaden the capabilities of the data storage solution. These may include advanced search functionalities, data replication for improved redundancy, and enhanced data access controls.</p>
+<p style="text-align:justify;">&#9642; Secondly, a focus on code optimization would be essential to enhance the efficiency and performance of the application. This could involve refactoring the existing codebase, identifying and eliminating any bottlenecks, and adopting best practices for optimization to ensure smoother execution and faster data retrieval.</p>
+<p style="text-align:justify;">&#9642; Thirdly, an emphasis on incorporating more Object-Oriented Programming (OOP) concepts would be beneficial. This could involve designing and implementing modular and reusable code components, employing inheritance and polymorphism to improve code structure and maintainability, and applying encapsulation to protect data integrity.</p>
+<p style="text-align:justify;">&#9642; By continuously refining and expanding upon the project with these future works, the data storage application would evolve into a more comprehensive and efficient solution, offering an enhanced user experience and greater flexibility in managing decentralized data within the organization.</p>
+</blockquote>
+        
+</figure>  
+</div>
+<hr>
+<hr>
+<br>
+   </body>
+</html>

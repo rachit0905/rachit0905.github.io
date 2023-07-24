@@ -5,8 +5,23 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Sorting Visualization</title>
 	<link rel="stylesheet" type="text/css" href="style/sorting.css">
+    <link rel="stylesheet" type="text/css" href="style/sorting.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
 
+	<link rel="stylesheet" type="text/css" href="style/sorting.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <style>
+        hr {
+      border: 0;
+      margin-left: 2%;
+      margin-right: 2%;
+      border-top: 4px solid brown;
+      border-radius: 5px;
+    }
+    </style>
 </head>
 <body>
 	<div class="header1">
@@ -59,11 +74,11 @@
 	<div class="header1">
 		<h1>CODE SNIPPETS</h1>
 	</div>
-    <table>
+    <table >
         <tr>
-          <th>C++ Code</th>
-          <th>Python Code</th>
-          <th>JavaScript Code</th>
+          <th><center>C++ Code</center></th>
+          <th><center>Python Code</center></th>
+          <th><center>JavaScript Code</center></th>
         </tr>
         <tr>
           <td> <div class="container">
@@ -343,10 +358,38 @@
         
       </table>
 
+      <br><br>
+
+      <hr>
+	  <br>
+		<h3 style="text-align:justify;"><i><strong><center>Complexcity of Merge Sort</center></strong> </i></h3>
+	  
+			<div style="margin-left: 7%;" class ="container">
+			  <figure class="text-justify">
+				  <blockquote class="blockquote">
+
+                    <p><i>Time Complexity: </i></p>
+                    <p><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O(N log(N)),  Merge Sort is a recursive algorithm and time complexity can be expressed as following recurrence relation. </i></p>
+                    <p><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;T(n) = 2T(n/2) + θ(n)</i></p>
+                    <p><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The above recurrence can be solved either using the Recurrence Tree method or the Master method. It falls in case II of the Master Method and the solution of the recurrence is θ(Nlog(N)). The time complexity of Merge Sort isθ(Nlog(N)) in all 3 cases (worst, average, and best) as merge sort always divides the array into two halves and takes linear time to merge two halves.</i></p>
+                    <p><i>Auxiliary Space: </i></p>
+                    <p><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O(N), In merge sort all elements are copied into an auxiliary array. So N auxiliary space is required for merge sort.</i></p>
+              </blockquote>
+            
+          </figure>  
+        </div>  
+
 	<script src="App/beep.js"></script>
 	<script src="App/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>
+
+    <br><br>	
+    <footer>
+        <p>Author: RACHIT PATEL<br>
+        <a href="mailto:hege@example.com">rachitpatell.98@gmail.com</a></p>
+      </footer>
+
 </body>
 
 </html>
