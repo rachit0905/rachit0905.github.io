@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>MEDICAL BOT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
+
+	<link rel="stylesheet" type="text/css" href="style/sorting.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <style>
+
+
+
+hr {
+  border: 0;
+  margin-left: 2%;
+  margin-right: 2%;
+  border-top: 4px solid brown;
+  border-radius: 5px;
+}
+ /* hero background image */
+.bgimage {
+    height:100vh;
+    background: url('/img/sql.jpeg');
+    background-size:cover;
+    position:relative;
+}
+/* text css above hero image*/
+.hero_title {
+    font-size: 4.5rem;
+}
+
+/* about section image css */
+.imageAboutPage {
+    width: 100%;
+}
+
+.hero_desc {
+    font-size: 2rem;
+}
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+
+      </style>
+   </head>
+   <body>
+
+    <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
+        <div class="container-fluid" >
+          <a class="navbar-brand" href="bio.html">
+            <img src="img/profilepic.jpeg" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> 
+          </a>
+          
+          <ul class="navbar-nav">
+            <a class="navbar-brand" href="https://www.linkedin.com/in/rachit-patel-666494167">
+                <img src="img/linkedin.png" alt="Avatar Logo" style="width:30px;" class="rounded-pill"> 
+              </a>
+            <li class="nav-item">
+                <a class="nav-link" style="font-size:20px;" href="https://www.linkedin.com/in/rachit-patel-666494167"><strong>LinkedIn</strong></a>
+            </li>
+            <a class="navbar-brand" href="https://auth.geeksforgeeks.org/user/rachitpatell98">
+                <img src="img/gfg.jpeg" alt="Avatar Logo" style="width:30px;" class="rounded-pill"> 
+              </a>
+            <li class="nav-item">
+                <a class="nav-link" style="font-size:20px;" href="https://auth.geeksforgeeks.org/user/rachitpatell98"><strong>GFG Profile</strong> </a>
+            </li>
+            <a class="navbar-brand" href="https://www.linkedin.com/in/rachit-patel-666494167">
+              <img src="img/college.png" alt="Avatar Logo" style="width:30px;" class="rounded-pill"> 
+            </a>
+            <li class="nav-item">
+              <a class="nav-link" style="font-size:20px;" href="#"><strong>Education</strong></a>
+            </li>
+            <a class="navbar-brand" href="https://www.linkedin.com/in/rachit-patel-666494167">
+              <img src="img/project.png" alt="Avatar Logo" style="width:30px;" class="rounded-pill"> 
+            </a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"  style="font-size:20px;" href="#" role="button" data-bs-toggle="dropdown"><strong>Projects</strong></a>
+                <ul class="dropdown-menu">
+                    <a class="nav-link dropdown-togglee"  style="font-size:15px;" href="mlprojects.html" role="button" data-bs-toggle="dropdown"><strong>DSA PROJECTS</strong></a>
+
+                  <li><a class="dropdown-item" href="index.html">Sorting Visualizer</a></li>
+                  <li><a class="dropdown-item" href="sudoko.html">Sudoku Solver</a></li>
+
+                  <a class="nav-link dropdown-togglee"  style="font-size:15px;" href="mlprojects.html" role="button" data-bs-toggle="dropdown"><strong>STORAGE BASED</strong></a>
+
+                  <li><a class="dropdown-item" href="decentral.html">Decentralized Storage</a></li>
+                  <li class="nav-item dropdown">                
+                   
+                    <a class="nav-link dropdown-togglee"  style="font-size:15px;" href="mlprojects.html" role="button" data-bs-toggle="dropdown"><strong>ML PROJECTS</strong></a>
+                    <ul class="dropdown-menuu">
+                        <li><a class="dropdown-item" href="mlprojects.html">Medical Bot</a></li>
+						<li><a class="dropdown-item" href="SQL.html">SQL PROJECTS</a></li>
+                        <li><a class="dropdown-item" href="ehr_blockchain.html">ACADEMIC</a></li>
+                                       
+                        </ul>      
+                
+                    </li>
+                </ul>
+            </li>
+            
+              <a class="navbar-brand" href="https://www.linkedin.com/in/rachit-patel-666494167">
+                <img src="img/intership.png" alt="Avatar Logo" style="width:30px;" class="rounded-pill"> 
+              </a>
+            <li class="nav-item">
+              <a class="nav-link" style="font-size:20px;" href="#"><strong>Interships</strong></a>
+            </li>
+            <a class="navbar-brand" href="https://www.linkedin.com/in/rachit-patel-666494167">
+                <img src="img/cv.png" alt="Avatar Logo" style="width:30px;" class="rounded-pill"> 
+              </a>
+            <li class="nav-item">
+                <a class="nav-link" style="font-size:20px;" href="img/ResumeRACHIT_PATEL_1.pdf"><strong>DownloadCV</strong></a>
+              </li>
+          </ul>
+        </div>
+    </nav>
+
+
+           <!-- main banner -->
+      <section class="bgimage" id="home">
+  </section>       
+  
+  <br>
+  <br>
+ <hr><br>
+  <div class ="container">
+  <figure class="text-justify">
+      <blockquote class="blockquote">
+        <p style="text-align:justify;"><i><strong><center>ABOUT THE PROJECT</center></strong> </i></p>
+            <p><i> In this project i tried to create the working SCHEMA for various systems namely Library system , railway system and recipe book using SQL(Structured Query Language).As it helps in accessing and manipulating relational database in effective manner. </i></p>
+	  </br>
+	  <p><i><b>WORKING </b>- Download SQL Command Line in your System. Run all the Create Table Commands one by one.Insertion could be done using Insert command of SQL  </i></p>
+		<p><i>SYNTAX ---  INSERT INTO table_name (column1, column2, column3, ...) VALUES (value1, value2, value3, ...);</i></p>
+		
+		</blockquote>
+      
+    </figure>  
+  </div>  
+  <br>
+  <hr>
+  <br>
+  <br>
+  <div class="header1">
+    <h1>CODE SNIPPETS</h1>
+</div>
+<table>
+    <tr>
+      <th><br>
+        <h2 style="font-family:times new roman ;text-align: center;"><b>SQL CODE</b></h2>
+        <br></th>
+    </tr>
+    <tr>
+      <td> <div class="container">
+		<p style="text-align:justify;"><i><strong><center>Library System</center></strong> </i></p>
+            <p><i> </i></p>
+        <pre class="line-numbers">
+            <code class="language-css">
+				
+			DROP SCHEMA IF EXISTS librarysytem;
+			CREATE SCHEMA IF NOT EXISTS librarysytem;
+
+			DROP TABLE IF EXISTS librarysytem.user_login;
+			CREATE TABLE IF NOT EXISTS librarysytem.user_login (
+				user_id TEXT PRIMARY KEY,
+				user_password TEXT,
+				first_name TEXT,
+				last_name TEXT,
+				sign_up_on DATE,
+				email_id TEXT
+			);
+
+			DROP TABLE IF EXISTS librarysytem.publisher;
+			CREATE TABLE IF NOT EXISTS librarysytem.publisher (
+				publisher_id TEXT PRIMARY KEY,
+				publisher TEXT,
+				distributor TEXT,
+				releases_count INT,
+				last_release DATE
+			);
+
+			DROP TABLE IF EXISTS librarysytem.author;
+			CREATE TABLE IF NOT EXISTS librarysytem.author (
+				author_id TEXT PRIMARY KEY,
+				first_name TEXT,
+				last_name TEXT,
+				publications_count INT
+			);
+
+			DROP TABLE IF EXISTS librarysytem.books;
+			CREATE TABLE IF NOT EXISTS librarysytem.books (
+				book_id TEXT PRIMARY KEY,
+				book_code TEXT,
+				book_name TEXT,
+				author_id TEXT REFERENCES librarysytem.author (author_id),
+				publisher_id TEXT REFERENCES librarysytem.publisher (publisher_id),
+				book_version TEXT,
+				release_date DATE,
+				available_from DATE,
+				is_available BOOLEAN
+			);
+
+			DROP TABLE IF EXISTS librarysytem.staff;
+			CREATE TABLE IF NOT EXISTS librarysytem.staff (
+				staff_id TEXT PRIMARY KEY,
+				first_name TEXT,
+				last_name TEXT,
+				staff_role TEXT,
+				start_date DATE,
+				last_date DATE,
+				is_active BOOLEAN,
+				work_shift_start TIME,
+				work_shift_end TIME
+			);
+
+			DROP TABLE IF EXISTS librarysytem.readers;
+			CREATE TABLE IF NOT EXISTS librarysytem.readers (
+				reader_id TEXT PRIMARY KEY,
+				first_name TEXT,
+				last_name TEXT,
+				registered_on DATE,
+				books_issued_total INT,
+				books_issued_current INT,
+				is_issued BOOLEAN,
+				last_issue_date DATE,
+				total_fine FLOAT,
+				current_fine FLOAT
+			);
+
+			DROP TABLE IF EXISTS librarysytem.books_issue;
+			CREATE TABLE IF NOT EXISTS librarysytem.books_issue (
+				issue_id SERIAL PRIMARY KEY,
+				book_id TEXT REFERENCES librarysytem.books (book_id),
+				issued_to TEXT REFERENCES librarysytem.readers (reader_id),
+				issued_on DATE,
+				return_on DATE,
+				current_fine FLOAT,
+				fine_paid BOOLEAN,
+				payment_transaction_id TEXT
+			);
+
+			DROP TABLE IF EXISTS librarysytem.settings;
+			CREATE TABLE IF NOT EXISTS librarysytem.settings (
+				book_issue_count_per_reader INT,
+				fine_per_day FLOAT,
+				book_return_in_days INT
+			);
+                                                        
+            </code>
+         </pre>
+        </div></td>
+        </tr>
+
+		 <tr>
+      <td> <div class="container">
+		<p style="text-align:justify;"><i><strong><center>RAILWAY SYSTEM</center></strong> </i></p>
+            <p><i> </i></p>
+        <pre class="line-numbers">
+            <code class="language-css">
+				
+				DROP SCHEMA IF EXISTS railsystem CASCADE;
+				CREATE SCHEMA IF NOT EXISTS railsystem;
+				
+				DROP TABLE IF EXISTS railsystem.user_login;
+				CREATE TABLE IF NOT EXISTS railsystem.user_login (
+					user_id TEXT PRIMARY KEY,
+					user_password TEXT,
+					first_name TEXT,
+					last_name TEXT,
+					sign_up_on DATE,
+					email_id TEXT
+				);
+				
+				DROP TABLE IF EXISTS railsystem.passenger;
+				CREATE TABLE IF NOT EXISTS railsystem.passenger (
+					passenger_id TEXT PRIMARY KEY,
+					user_password TEXT,
+					first_name TEXT,
+					last_name TEXT,
+					sign_up_on DATE,
+					email_id TEXT,
+					contact TEXT
+				);
+				
+				DROP TABLE IF EXISTS railsystem.train_type;
+				CREATE TABLE IF NOT EXISTS railsystem.train_type (
+					train_type_id TEXT PRIMARY KEY,
+					train_type TEXT,
+					coaches_count TEXT,
+					passenger_strength TEXT,
+					train_count DATE
+				);
+				
+				DROP TABLE IF EXISTS railsystem.stations;
+				CREATE TABLE IF NOT EXISTS railsystem.stations (
+					station_id TEXT PRIMARY KEY,
+					station_name TEXT,
+					city TEXT,
+					state TEXT
+				);
+				
+				DROP TABLE IF EXISTS railsystem.train_details;
+				CREATE TABLE IF NOT EXISTS railsystem.train_details (
+					train_id TEXT PRIMARY KEY,
+					train_type_id TEXT REFERENCES railsystem.train_type (train_type_id),
+					source_station_id TEXT REFERENCES railsystem.stations (station_id),
+					destination_station_id TEXT REFERENCES railsystem.stations (station_id),
+					duration_minutes INT,
+					journey_start TIMESTAMP,
+					journey_end TIMESTAMP,
+					passenger_strength INT,
+					is_available BOOLEAN
+				);
+				
+				DROP TABLE IF EXISTS railsystem.journey;
+				CREATE TABLE IF NOT EXISTS railsystem.journey (
+					journey_id TEXT PRIMARY KEY,
+					passenger_id TEXT REFERENCES railsystem.passenger (passenger_id),
+					train_id TEXT REFERENCES railsystem.train_details (train_id),
+					booking_id TEXT,
+					payment_id TEXT,
+					payment_status TEXT,
+					paid_on TIMESTAMP,
+					booking_status TEXT,
+					booked_on TIMESTAMP,
+					seat_alloted TEXT,
+					meal_booked BOOLEAN
+				);
+				
+				DROP TABLE IF EXISTS railsystem.train_routes;
+				CREATE TABLE IF NOT EXISTS railsystem.train_routes (
+					row_id SERIAL PRIMARY KEY,
+					route_id TEXT,
+					train_id TEXT REFERENCES railsystem.train_details (train_id),
+					station_id TEXT REFERENCES railsystem.stations (station_id),
+					order_number INT,
+					halt_duration_minutes INT,
+					estimated_arrival TIME,
+					estimated_departure TIME
+				);                                
+            </code>
+         </pre>
+        </div></td>
+        </tr>
+
+
+		<tr>
+			<td> <div class="container">
+				<p style="text-align:justify;"><i><strong><center>READ & COOK</center></strong> </i></p>
+            <p><i> </i></p>
+			  <pre class="line-numbers">
+				  <code class="language-css">
+					
+					DROP SCHEMA IF EXISTS readcook CASCADE;
+					CREATE SCHEMA IF NOT EXISTS readcook;
+					
+					DROP TABLE IF EXISTS readcook.recipe;
+					CREATE TABLE IF NOT EXISTS readcook.recipe (
+						recipe_id SERIAL PRIMARY KEY,
+						name TEXT,
+						description TEXT,
+						instructions TEXT
+					);
+					
+					DROP TABLE IF EXISTS readcook.ingredient;
+					CREATE TABLE IF NOT EXISTS readcook.ingredient (
+						ingredient_id SERIAL PRIMARY KEY,
+						name TEXT
+					);
+					
+					DROP TABLE IF EXISTS readcook.measure;
+					CREATE TABLE IF NOT EXISTS readcook.measure (
+						measure_id SERIAL PRIMARY KEY,
+						name TEXT
+					);
+					
+					DROP TABLE IF EXISTS readcook.recipe_ingredient;
+					CREATE TABLE IF NOT EXISTS readcook.recipe_ingredient (
+						recipe_id INT REFERENCES readcook.recipe (recipe_id),
+						ingredient_id INT REFERENCES readcook.ingredient (ingredient_id),
+						measure_id INT REFERENCES readcook.measure (measure_id),
+						amount INT
+					);									  
+				  </code>
+			   </pre>
+			  </div>
+			  
+			</td>
+			  </tr>
+			  </table>
+			  <br>
+			  <br>
+			  <hr>
+
+			  <center>
+				<p style="text-align:justify;"><i><strong><center>READ & COOK -- SCREENSHOT</center></strong> </i></p>
+
+			  <img  src="img/sql_ss.jpeg" style="width:80%;"> 
+			</center>
+
+       
+        <br>
+        <br>
+        <hr>
+
+        
+            
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+   </body>
+</html>
