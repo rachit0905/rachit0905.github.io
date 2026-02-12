@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Will You Be My Valentine? 💖</title>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Arial', sans-serif;
+        background: linear-gradient(to right, #ff758c, #ff7eb3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .container {
+        text-align: center;
+        background: white;
+        padding: 50px;
+        border-radius: 20px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    h1 {
+        color: #ff4d6d;
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+
+    .buttons {
+        margin-top: 20px;
+    }
+
+    button {
+        padding: 15px 30px;
+        margin: 10px;
+        font-size: 18px;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+
+    .yes {
+        background-color: #ff4d6d;
+        color: white;
+    }
+
+    .yes:hover {
+        background-color: #ff1e4d;
+        transform: scale(1.1);
+    }
+
+    .yess {
+        background-color: #ff99ac;
+        color: white;
+    }
+
+    .yess:hover {
+        background-color: #ff4d6d;
+        transform: scale(1.15);
+    }
+
+    .message {
+        margin-top: 25px;
+        font-size: 20px;
+        color: #ff1e4d;
+        display: none;
+    }
+
+    @keyframes fadeIn {
+        from {opacity: 0; transform: translateY(-20px);}
+        to {opacity: 1; transform: translateY(0);}
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Will You Be My Valentine? Meri Payaari PIHU 💖</h1>
+
+    <div class="buttons">
+        <button class="yes" onclick="showMessage()">Yes 💕</button>
+        <button class="yess" onclick="showMessage()">Yes Yes! 💖</button>
+        
+    </div>
+
+    <div class="message" id="message">
+        Yayyyyy!!! 💘 You just made my day the happiest ever! Meeri PIHUUUUUU RANNIII 🌹💞
+    </div>
+</div>
+
+<script>
+function showMessage() {
+    document.getElementById("message").style.display = "block";
+}
+</script>
+
+</body>
+</html>
