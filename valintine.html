@@ -2,230 +2,248 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Pihu ❤️ Ultimate Proposal</title>
+<title>Pihu ❤️ Proposal</title>
 
 <style>
 body {
     margin: 0;
     height: 100vh;
-    overflow: hidden;
-    font-family: Arial, sans-serif;
-    background: radial-gradient(circle at center, #1a001a, #000);
-    color: white;
-}
-
-/* STARS */
-.star {
-    position: absolute;
-    width: 2px;
-    height: 2px;
-    background: white;
-    animation: twinkle 2s infinite alternate;
-}
-
-@keyframes twinkle {
-    from { opacity: 0.3; }
-    to { opacity: 1; }
-}
-
-.center {
-    position: relative;
-    z-index: 10;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    flex-direction: column;
-    text-align: center;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(-45deg, #1a001a, #330033, #000, #220022);
+    background-size: 400% 400%;
+    animation: gradientMove 15s ease infinite;
+    color: white;
 }
 
-/* BUTTONS */
+@keyframes gradientMove {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+/* Main centered box */
+.container {
+    text-align: center;
+    padding: 40px;
+    background: rgba(0,0,0,0.4);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 25px hotpink;
+    position: relative;
+}
+
+h1 {
+    margin-bottom: 20px;
+    text-shadow: 0 0 15px hotpink;
+}
+
+/* Buttons */
 button {
-    padding: 12px 25px;
+    padding: 12px 28px;
     border-radius: 30px;
     border: none;
     font-size: 18px;
     cursor: pointer;
     margin: 10px;
-    background: hotpink;
-    color: white;
     transition: 0.3s;
 }
 
-button:hover {
-    transform: scale(1.1);
+#yesBtn {
+    background: hotpink;
+    color: white;
+    animation: pulse 1.5s infinite;
 }
 
-#noBtn {
-    position: absolute;
-}
-
-/* LOVE METER */
-.meter {
-    width: 200px;
-    height: 15px;
-    background: #333;
-    border-radius: 20px;
-    margin-top: 15px;
-    overflow: hidden;
-}
-
-.fill {
-    height: 100%;
-    width: 0%;
-    background: pink;
-    transition: 0.5s;
-}
-
-/* HEART BEAT */
-.heart {
-    font-size: 40px;
-    animation: beat 1s infinite;
-}
-
-@keyframes beat {
+@keyframes pulse {
     0% { transform: scale(1); }
-    50% { transform: scale(1.3); }
+    50% { transform: scale(1.1); }
     100% { transform: scale(1); }
 }
 
-/* TYPEWRITER */
-.typewriter {
+#noBtn {
+    background: gray;
+    color: white;
+    position: relative;
+}
+
+/* Love meter */
+.meter {
+    width: 250px;
+    height: 18px;
+    background: #333;
+    border-radius: 20px;
+    margin: 15px auto;
     overflow: hidden;
-    white-space: nowrap;
+}
+.fill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(to right, hotpink, deeppink);
+    transition: 0.4s;
+}
+
+/* Floating hearts */
+.heart {
+    position: absolute;
+    font-size: 16px;
+    animation: floatUp 6s linear infinite;
+    opacity: 0.7;
+}
+@keyframes floatUp {
+    from { transform: translateY(100vh); }
+    to { transform: translateY(-10vh); opacity: 0; }
+}
+
+/* Typewriter */
+.typewriter {
     border-right: 2px solid pink;
-    width: 0;
-    animation: typing 5s steps(50, end) forwards;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    margin-top: 15px;
 }
 
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-}
-
-/* RING BOX */
+/* Ring box */
 .ring-box {
     width: 120px;
     height: 80px;
     background: crimson;
+    margin: 20px auto;
     border-radius: 10px;
     position: relative;
-    margin-top: 20px;
+    cursor: pointer;
 }
-
 .lid {
-    width: 120px;
+    width: 100%;
     height: 40px;
     background: darkred;
     position: absolute;
     top: 0;
     border-radius: 10px 10px 0 0;
-    transition: 1s;
     transform-origin: top;
+    transition: 0.8s;
 }
-
 .ring {
     position: absolute;
-    top: 25px;
+    top: 30px;
     left: 50%;
     transform: translateX(-50%);
     font-size: 30px;
     opacity: 0;
-    transition: 1s;
+    transition: 0.8s;
 }
-
 .open .lid {
     transform: rotateX(120deg);
 }
-
 .open .ring {
     opacity: 1;
-    transform: translateX(-50%) translateY(-15px);
+    transform: translateX(-50%) translateY(-12px);
 }
 
-/* FIREWORK */
+/* Fireworks */
 .firework {
     position: absolute;
-    font-size: 25px;
-    animation: explode 1s ease-out forwards;
+    font-size: 20px;
+    animation: explode 1s forwards;
 }
-
 @keyframes explode {
     from { transform: scale(0); opacity: 1; }
-    to { transform: scale(3); opacity: 0; }
+    to { transform: scale(4); opacity: 0; }
 }
 </style>
 </head>
 
 <body>
 
-<div id="stars"></div>
-
-<div class="center">
+<div class="container">
     <h1>Pihu ❤️ Will You Be Mine?</h1>
-    <div class="heart">💖</div>
 
-    <button onclick="yesClicked()">YES 💕</button>
+    <button id="yesBtn" onclick="yesClicked()">YES 💕</button>
     <button id="noBtn">NO 😢</button>
 
     <div class="meter">
         <div class="fill" id="fill"></div>
     </div>
 
-    <div id="message" style="margin-top:20px;"></div>
+    <div id="message"></div>
 </div>
 
 <script>
-// Stars
-for(let i=0;i<150;i++){
-    let s=document.createElement("div");
-    s.className="star";
-    s.style.left=Math.random()*100+"%";
-    s.style.top=Math.random()*100+"%";
-    s.style.animationDelay=Math.random()*2+"s";
-    document.body.appendChild(s);
-}
 
-// NO button behavior
+/* Floating hearts */
+setInterval(() => {
+    let h = document.createElement("div");
+    h.className = "heart";
+    h.innerHTML = "💖";
+    h.style.left = Math.random() * 100 + "%";
+    document.body.appendChild(h);
+    setTimeout(() => h.remove(), 6000);
+}, 600);
+
+/* Runaway NO */
 let love = 0;
 const noBtn = document.getElementById("noBtn");
 const fill = document.getElementById("fill");
 
 noBtn.addEventListener("mouseover", function() {
+    noBtn.style.position = "absolute";
     noBtn.style.left = Math.random() * (window.innerWidth - 100) + "px";
     noBtn.style.top = Math.random() * (window.innerHeight - 50) + "px";
-    noBtn.style.transform = "scale(0.8)";
     love += 10;
-    if(love > 100) love = 100;
+    if (love > 100) love = 100;
     fill.style.width = love + "%";
 });
 
-// YES clicked
+/* Typewriter */
+function typeWriter(text, element) {
+    let i = 0;
+    element.innerHTML = "";
+    element.className = "typewriter";
+    function typing() {
+        if (i < text.length) {
+            element.innerHTML += text.charAt(i);
+            i++;
+            setTimeout(typing, 35);
+        }
+    }
+    typing();
+}
+
+/* YES click */
 function yesClicked() {
     document.getElementById("message").innerHTML = `
-        <div class="typewriter">
-            Pihu... I promise to love you endlessly and protect your smile forever ❤️
-        </div>
-        <div class="ring-box open">
+        <div id="typedText"></div>
+        <div class="ring-box" onclick="this.classList.toggle('open')">
             <div class="lid"></div>
             <div class="ring">💍</div>
         </div>
     `;
+
+    typeWriter(
+        "Pihu... I promise to love you endlessly and protect your smile forever ❤️",
+        document.getElementById("typedText")
+    );
+
     fireworks();
 }
 
-// Fireworks
+/* Fireworks */
 function fireworks() {
-    for(let i=0;i<40;i++){
-        let f=document.createElement("div");
-        f.innerHTML="🎆";
-        f.className="firework";
-        f.style.left=Math.random()*window.innerWidth+"px";
-        f.style.top=Math.random()*window.innerHeight+"px";
+    for (let i = 0; i < 40; i++) {
+        let f = document.createElement("div");
+        f.innerHTML = "🎆";
+        f.className = "firework";
+        f.style.left = Math.random() * window.innerWidth + "px";
+        f.style.top = Math.random() * window.innerHeight + "px";
         document.body.appendChild(f);
-        setTimeout(()=>f.remove(),1000);
+        setTimeout(() => f.remove(), 1000);
     }
 }
+
 </script>
 
 </body>
